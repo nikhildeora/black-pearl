@@ -1,0 +1,52 @@
+.navbar__maincontainer{
+    background-color: #f6f4ff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+.navbar__logodiv{
+   margin-left: 12px;
+}
+
+.navbar__logo{
+    width: 220px;
+}
+
+.navbar__pagesroutes{
+  display: flex;
+  gap: 1.6rem;
+}
+
+.navbar__mainthirdpart{
+  display: flex;
+  gap: 1.6rem;
+  margin-right: 20px;
+}
+
+
+.Indiaflag{
+    width: 24px;
+} 
+
+.navbar__pagesroutes_link_div{
+    color: #7d41c7;
+   font-size: 0.9rem;
+   display: flex;
+   gap: 5px;
+}
+
+.navbar__serchbar{
+    border: 1px solid #7d41c7;
+    padding: 5px 20px 5px 8px;
+}
+
+.navbar__serchicon{
+    /* border: 1px solid black; */
+    /* padding: 12px; */
+}
