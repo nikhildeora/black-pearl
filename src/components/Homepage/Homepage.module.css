@@ -1,0 +1,55 @@
+.homepageMain {
+  margin: 1vw;
+  /* only margin */
+}
+
+.ankletRing {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.ankletRing > img {
+  width: 97%;
+}
+.ringRight {
+  width: 50vw;
+}
+
+.ringRight > img {
+  width: 100%;
+  height: 45.5%;
+}
+
+.category6 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.category6 > img {
+  width: 95%;
+  margin: auto;
+  margin-bottom: 1vw;
+  transition: transform 0.2s;
+}
+
+.category6 > img:hover {
+  transform: scale(1.01);
+}
+
+.collection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 2vw;
+  overflow: hidden;
+}
+
+.collection > img {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  transition: transform 0.5s, filter 1.5s ease-in-out;
+}
+
+.collection > img:hover {
+  transform: scale(1.1);
+}
