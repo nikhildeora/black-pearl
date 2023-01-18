@@ -1,10 +1,11 @@
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
+import {Swiper,SwiperSlide} from "swiper/react"
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper";
 import slider1 from "../../assets/Homepage/slider1-1.jpg"
+
 const Homepage = () => {
   return (
     <div>

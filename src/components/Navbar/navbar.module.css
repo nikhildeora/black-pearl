@@ -1,13 +1,17 @@
+.navbar__outermain_div{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 5;
+}
+
 .navbar__maincontainer{
     background-color: #f6f4ff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 5rem;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
 }
 
 .navbar__logodiv{
@@ -20,7 +24,8 @@
 
 .navbar__pagesroutes{
   display: flex;
-  gap: 1.6rem;
+  align-items: center;
+  gap: 2.2rem;
 }
 
 .navbar__mainthirdpart{
@@ -30,23 +35,67 @@
 }
 
 
+
 .Indiaflag{
     width: 24px;
+    cursor: pointer;
 } 
 
 .navbar__pagesroutes_link_div{
-    color: #7d41c7;
-   font-size: 0.9rem;
+    color: #4a1a85;
+   font-size: 0.8rem;
    display: flex;
-   gap: 5px;
+   justify-content: center;
+   align-items: center;
+   gap: 8px;
+   cursor: pointer;
 }
 
-.navbar__serchbar{
-    border: 1px solid #7d41c7;
+.navbar__pagesroutes_link_div:hover{
+    color: black;
+    transition: 0.3s;
+}
+
+.navbar__top_icons{
+    font-size: 1.3rem;
+}
+
+.navbar__searchbar{
+    outline: none;
+    border: 1px solid rgb(222, 87, 229);
     padding: 5px 20px 5px 8px;
 }
 
-.navbar__serchicon{
-    /* border: 1px solid black; */
-    /* padding: 12px; */
+.navbar__searchicon{
+    border: 1px solid rgb(222, 87, 229);
+    padding: 0px 5px 5px 5px ;
+   background: linear-gradient(to right, rgb(222, 87, 229) 0%, rgb(136, 99, 251) 100%) 0px 0px / auto;
+   color: white;
+   width: 4.2rem;
+   cursor: pointer;
+}
+
+.navbar__mainthirdpart_icon{
+    cursor: pointer;
+    color: black;
+}
+
+.navbar__secondcontainer{
+    background-color: #f9f9fa;
+    position: absolute;
+    top: 5rem;
+    left: 0px;
+    width: 100%;
+    /* box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.navbar__secondmenu{
+  display: flex;
+  width: 77%;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px ;
+  font-size: 0.8rem;
 }
