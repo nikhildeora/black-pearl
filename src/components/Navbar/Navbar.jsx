@@ -6,6 +6,7 @@ import Indiaflag from "../../assets/Indiaflag.png"
 const Navbar = () => {
     const [toggle, setToggle] = useState(false)
     return (
+
         <div className={styles.navbar__outermain_div}>
             <div className={styles.navbar__maincontainer}>
                 <div className={styles.navbar__logodiv}>
@@ -34,6 +35,7 @@ const Navbar = () => {
                     </li>
 
                 </ul>
+
 
                 <ul type="none" className={styles.navbar__mainthirdpart}>
                     <li><i className={`fa-sharp fa-solid fa-location-dot ${styles.navbar__mainthirdpart_icon}`}></i> pincode</li>
