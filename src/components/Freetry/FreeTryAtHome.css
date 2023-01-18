@@ -2,6 +2,9 @@
     margin-top: 5rem;
 
 }
+.video__container{
+    position: relative;
+}
 .video__container video{
     width: 100%;
    
@@ -31,6 +34,7 @@
     margin: 10px auto;
     position: relative;
     display: inline-block;
+    
 }
 .input__wrapper{
     font-family: 'InterRegular','Helvetica Neue',Helvetica,Arial,sans-serif;

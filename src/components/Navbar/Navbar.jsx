@@ -29,7 +29,7 @@ const Navbar = () => {
                 </li>
                 <li className={styles.navbar__pagesroutes_link_div}>
                     <input className={styles.navbar__serchbar} type="text" placeholder='Search' />
-                    <i className={`uil uil-search ${styles.navbar__serchicon}`}></i>
+                    <i class={`uil uil-search ${styles.navbar__serchicon}`}></i>
                 </li>
 
             </ul>
