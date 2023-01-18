@@ -1,10 +1,12 @@
 import React from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
+
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper";
+
 import styles from "./Homepage.module.css";
 import slider1 from "../../assets/HomeImage/slider1-1.jpg";
 import slider2 from "../../assets/HomeImage/slider1-2.jpg";
@@ -21,6 +23,7 @@ import mensRing from "../../assets/HomeImage/mensRing.jpg";
 import barlaCollection from "../../assets/HomeImage/barlaCollection.jpg";
 import mograCollection from "../../assets/HomeImage/mograCollection.jpg";
 import harmonyCollection from "../../assets/HomeImage/harmonyCollection.jpg";
+
 
 const Homepage = () => {
   return (
