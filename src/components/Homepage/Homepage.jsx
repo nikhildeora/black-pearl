@@ -1,3 +1,4 @@
+
 import React from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -23,7 +24,6 @@ import mensRing from "../../assets/HomeImage/mensRing.jpg";
 import barlaCollection from "../../assets/HomeImage/barlaCollection.jpg";
 import mograCollection from "../../assets/HomeImage/mograCollection.jpg";
 import harmonyCollection from "../../assets/HomeImage/harmonyCollection.jpg";
-
 
 const Homepage = () => {
   return (
