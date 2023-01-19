@@ -15,29 +15,36 @@
 }
 
 .navbar__logodiv{
-   margin-left: 12px;
+   margin-left: 0.6rem;
+   flex: 2;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .navbar__logo{
-    width: 220px;
+    width: 90%;
 }
 
 .navbar__pagesroutes{
+    flex: 6;
   display: flex;
+  padding: 0px;
+  justify-content: space-between;
   align-items: center;
-  gap: 2.2rem;
 }
 
 .navbar__mainthirdpart{
-  display: flex;
-  gap: 1.6rem;
-  margin-right: 20px;
+    flex: 2;
+    padding: 0px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 
 
 .Indiaflag{
-    width: 24px;
+    width: 1.4rem;
     cursor: pointer;
 } 
 
@@ -47,7 +54,7 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   gap: 8px;
+   gap: 0.3rem;
    cursor: pointer;
 }
 
@@ -63,12 +70,12 @@
 .navbar__searchbar{
     outline: none;
     border: 1px solid rgb(222, 87, 229);
-    padding: 5px 20px 5px 8px;
+    padding: 0.3rem 1.4rem 0.3rem 0.7rem;
 }
 
 .navbar__searchicon{
     border: 1px solid rgb(222, 87, 229);
-    padding: 0px 5px 5px 5px ;
+    padding: 0rem 0.3rem 0.3rem 0.3rem;
    background: linear-gradient(to right, rgb(222, 87, 229) 0%, rgb(136, 99, 251) 100%) 0px 0px / auto;
    color: white;
    width: 4.2rem;
@@ -86,7 +93,6 @@
     top: 5rem;
     left: 0px;
     width: 100%;
-    /* box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset; */
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
@@ -96,6 +102,176 @@
   margin: auto;
   justify-content: space-between;
   align-items: center;
-  padding: 12px ;
+  padding: 1rem ;
   font-size: 0.8rem;
+}
+
+.navbar__secondmenu_image{
+    display: none;
+    width: 5rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.navbar__secondmenu>li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navbar__secondmenu>li>p{
+    margin: 0px;
+}
+
+.navbar__secondmenu>li>p:hover{
+    color: rgb(222, 87, 229);
+    text-decoration: underline;
+    transition-duration: 0.3s;
+}
+
+/* resposiveness componesnts  */
+
+.navbar__hemburger_icon{
+    font-size: 3rem;
+    display: none;
+    
+}
+
+@media screen and (max-width:990px) {
+    .navbar__hemburger_icon{
+        display: block;
+        margin-left: 2rem;
+    }
+
+    .navbar__pagesroutes{
+        position: fixed;
+        top: 9rem;
+        left: -100%;
+        background-color: #f6f4ff;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 100%;
+        gap: 1.3rem;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 0rem 2rem 0rem;
+        z-index: 3;
+    }
+
+    .navbar__pagesroutes_link_div{
+        margin: 0rem 3rem 0rem 3rem;
+        font-size: 1.4rem;
+        border: 1px solid rgb(222, 87, 229);
+        border-radius: 2rem;
+        background-color: rgb(249, 241, 249);
+    }
+
+    .navbar__top_icons{
+        font-size: 2rem;
+    }
+
+    .navbar__pagesroutes_link_div_search{
+        position: fixed;
+        top: 6rem;
+        width: 100%;
+        height: 4rem;
+        margin: auto;
+        background-color: #f6f4ff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.4rem 0rem 0.4rem 0rem;
+    }
+
+    .navbar__searchbar{
+        width: 70%;
+        padding: 0.9rem 1.4rem 0.9rem 0.7rem;
+        font-size: 1.6rem;
+    }
+
+    .navbar__searchicon{
+        padding: 0.9rem 0.9rem 0.9rem 0.9rem;
+        font-size: 1.6rem;
+    }
+
+    .navbar__secondcontainer{
+        padding: 3rem 0rem 0rem 0rem;
+        position: fixed;
+        top: 20.4rem;
+        left: -100%;
+    }
+
+    .navbar__secondmenu{
+        flex-direction: column;
+    }
+
+    .navbar__secondmenu_image{
+        display: block;
+        border-radius: 1.4rem;
+    }
+
+    .navbar__secondmenu>li{
+        justify-content: start;
+        align-items: auto;
+        gap: 1rem;
+       width: 100%;
+       margin: 0.5rem;
+       align-self: flex-start;
+       font-size: 1.6rem;
+       
+    }
+
+    .navbar__secondmenu>li>p{
+        margin: 0px;
+        width: 69%;
+        text-align: start;
+        padding: 0.3rem 0rem 0.3rem 0.2rem;
+        background-color: white;
+        border-radius: 2rem;
+    }
+
+    .navbar__maincontainer{
+        height: 6.4rem;
+    }
+    .navbar__logo{
+        width: 70%;
+    }
+    .navbar__showmenu{
+        left: 0px;
+        transition-duration: 1s;
+    }
+    .navbar__mainthirdpart{
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width:560px) {
+    .navbar__pagesroutes{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .navbar__secondcontainer{
+        top: 28.4rem;
+    }
+    .navbar__mainthirdpart{
+        position: fixed;
+        top: 4rem;
+        left: -100%;
+        font-size: 2rem;
+        width: 100%;
+        background-color: #f6f4ff;
+        padding: 0.4rem 0rem 0.4rem 0rem;
+    }
+    .navbar__showmenu{
+        left: 0px;
+        transition-duration: 1s;
+    }
+    .navbar__pagesroutes_link_div_search{
+        top: 9.5rem;
+    }
+    .navbar__pagesroutes{  
+        top: 12rem;
+    }
+    .navbar__secondcontainer{
+        top: 30.9rem;
+    }
 }
