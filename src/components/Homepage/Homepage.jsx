@@ -78,11 +78,14 @@ const Homepage = () => {
         </div>
         <div className={styles.collection}>
           <img src={barlaCollection} alt="" />
+          <div className={styles.collection__innerdiv}>
           <img src={mograCollection} alt="mograCollection" />
-          <img src={harmonyCollection} alt="" />
-        </div>
         <div className={styles.button}>
           <button>View all Collection</button>
+        </div>
+
+          </div>
+          <img src={harmonyCollection} alt="" />
         </div>
         <div className={styles.milestone}>
           <img src={markMilestoneLeft} alt="" />
