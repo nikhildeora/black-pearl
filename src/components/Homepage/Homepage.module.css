@@ -56,3 +56,140 @@
 .collection > img:hover {
   transform: scale(1.1);
 }
+
+.button > button {
+  margin-top: 5vh;
+  border-radius: 5px;
+  padding: 1rem;
+  font-size: 1rem;
+  padding: 0.5rem 3rem;
+  box-shadow: 0 0 6px 0 rgba(65, 29, 95, 0.5);
+  border: solid 1px transparent;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0)
+    ),
+    linear-gradient(101deg, #8863fb, #de57e5);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #fff inset;
+  cursor: pointer;
+}
+
+.button > button:hover {
+  box-shadow: none;
+  color: white;
+}
+
+.milestone {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.milestone > img {
+  width: 95%;
+  margin: auto;
+  padding: 20px 0;
+}
+
+.goldExchange {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #f7f0ee;
+}
+
+.goldExchangetext {
+  text-align: left;
+  margin: auto;
+  padding: 0 50px;
+}
+
+.goldExchangetext > p {
+  color: #6a6176;
+}
+
+.goldExchangetext > button {
+  border: 0px;
+  padding: 0.5rem 2rem;
+  background: linear-gradient(
+      to right,
+      rgb(222, 87, 229) 0%,
+      rgb(136, 99, 251) 100%
+    )
+    0px 0px / auto;
+  color: white;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+.trustTanishq {
+  background-color: #231535;
+}
+
+.trustTanishq > p {
+  color: #c4ade1;
+}
+
+.trustTanishq > button {
+  margin: 5vh;
+  border-radius: 5px;
+  padding: 1rem;
+  font-size: 1rem;
+  padding: 0.5rem 3rem;
+  box-shadow: 0 0 6px 0 rgba(65, 29, 95, 0.5);
+  border: solid 1px transparent;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0)
+    ),
+    linear-gradient(101deg, #8863fb, #de57e5);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  background-color: #231535;
+  box-shadow: 2px 1000px 1px #fff inset;
+  cursor: pointer;
+}
+
+.spriteImage {
+  background-color: #231535;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: auto;
+}
+
+.spriteImage h3 {
+  color: white;
+  /* font-size: 1rem; */
+}
+
+.spriteImage p {
+  color: rgb(196, 173, 225);
+}
+
+.spriteImage img {
+  width: 10vw;
+}
+
+.spriteImage > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 30vw;
+}
+
+.insta p {
+  color: #9d9fa4;
+  font-size: 2.2rem;
+  line-height: 44px;
+  text-align: center;
+  padding: 0 100px;
+}
+.instap p {
+  color: black;
+}
+
+shopInsta > h2 {
+  
+  color: rgb(51, 54, 62);
+}
