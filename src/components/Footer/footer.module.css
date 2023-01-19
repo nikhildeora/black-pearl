@@ -1,0 +1,127 @@
+.footer__grid{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__container{
+    width: 80%;
+    margin: auto;
+    padding-top: 30px;
+    margin-bottom: 40px;
+}
+
+.footer__maindiv{
+    background-color: #f6eff6;
+    padding-bottom: 1rem;
+}
+
+.footer__logoimage{
+    width: 12rem;
+}
+
+.footer__links{
+    text-decoration: none;
+    color: #7c7682;
+    font-size: 0.8rem;
+}
+
+.footer__socilamedialinks{
+    width: 80%;
+    text-align: start;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.footer__socilamedialinks img{
+    width: 2.4rem;
+    padding-right: 1rem;
+}
+
+.footer__thirdcontainer{
+    width: 80%;
+    display: flex;
+    margin: auto;
+    margin-top: 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__thirdcontainer>img{
+    width: 33%;
+}
+
+.footer__downloadimgdiv{
+    border: 1px solid #cdbbfe;
+    width: 30%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #faf5ed;
+    margin-bottom: 1rem;
+}
+
+.footer__downloadimgdiv img{
+    width: 35%;
+
+}
+
+.footersec__maindiv{
+    width: 80%;
+    margin: auto;
+    text-align: start;
+    margin-top: 2rem;
+}
+
+.footersec__maindiv h4{
+   color: #886afb;
+   font-size: 0.9rem;
+   margin-bottom: 0.1rem;
+}
+
+.footersec__maindiv p{
+    margin-top: 0px;
+    color: #625f65;
+}
+.footersec__maindiv span{
+    font-size: 0.8rem;
+    margin-right: 0.1rem;
+}
+.footersec__maindiv hr{
+    border: 0.01rem solid #c3bec8;
+ }
+
+ .footersec__copyright{
+    margin-top: 2.6rem;
+    margin-bottom: 27px;
+ }
+ .footersec__copyright h5{
+    color: #886afb;
+   margin-bottom: 0.1rem;
+ }
+
+@media screen and (max-width:990px) {
+    .footer__grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .footer__thirdcontainer{
+       flex-direction: column;
+    }
+    .footer__thirdcontainer>img{
+        width: 53%;
+        padding-bottom: 1rem;
+    }
+    .footer__downloadimgdiv{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:560px) {
+    .footer__grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
