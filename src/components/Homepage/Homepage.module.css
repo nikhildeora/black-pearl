@@ -40,14 +40,28 @@
 }
 
 .collection {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  /* grid-template-columns: repeat(3, 1fr); */
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
   margin-top: 2vw;
   overflow: hidden;
 }
 
-.collection > img {
+.collection__innerdiv{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+.collection__innerdiv>img{
   width: 90%;
+}
+
+.collection > img {
+  width: 30%;
   height: 100%;
   margin: auto;
   transition: transform 0.5s, filter 1.5s ease-in-out;
