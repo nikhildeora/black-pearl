@@ -40,7 +40,7 @@
     height: 50px;
     margin: 10px auto;
     position: relative;
-    display: inline-block;
+    display: flex;
     
 }
 .input__wrapper{
@@ -51,7 +51,7 @@
     width: 100%;
     height: 50px;
     padding: 8px 125px 8px 40px;
-    font-size: 1.4rem;
+    /* font-size: 1.4rem; */
     color: #fff;
     font-family: 'MuliSemiBold','Helvetica Neue',Helvetica,Arial,sans-serif;
     border-color: #fff;
@@ -287,7 +287,7 @@ h3{
     padding: 24px 0 0;
 }
 .bestseller_div h2{
-    font-size: 3rem;
+    /* font-size: 3rem; */
     margin-top: 20px;
     color: #231535;
     display: inline-block;
@@ -314,13 +314,7 @@ h3{
     height: 50px;
     margin: 10px auto;
     position: relative;
-    /* display: inline-block; */
-
-
-   
-    /* display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox; */
+  
     display: flex;
     -webkit-align-items: center;
     -webkit-box-align: center;
@@ -451,4 +445,128 @@ button, input, select, textarea {
     font-size: 3.8rem;
     color: rgb(35, 21, 53);
     font-weight: 200;
+}
+.mySwiper p{
+    font-size: 1.6rem;
+}
+.mySwiper .desc{
+    font-size: 1.8rem;
+}
+.Accordian{
+    display: flex;
+    padding: 3rem;
+    background-color: #f6f6f6;
+}
+.questions{
+    flex: 1;
+}
+.questions h3{
+    font-size: 2.4rem;
+    font-weight: 200;
+    font-family: serif;
+}
+.Accordian_options{
+    flex: 1;
+}
+.contact{
+    background-color: white;
+    display: flex;
+    width: 70%;
+}
+.contact_call p{
+    font-size: 1.5rem;
+}
+.a_href{
+    font-family: 'MuliSemiBold','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 1.8rem;
+    color: #8863fb;
+    text-decoration: none;
+}
+.Accordian_options{
+    padding: 2rem;
+}
+.AccordianBtn{
+    margin-bottom: 2rem;
+    
+}
+.AccordianBtn h2{
+    font-size: 1.4rem;
+}
+.AccordianPanel{
+    text-align: left;
+    font-size: 1.6rem;
+}
+
+@media screen and (max-width:990px){
+    /* *{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    } */
+    .main__container{
+        width: 100%;
+        max-height: 990px;
+    }
+   .text__container h2{
+    font-size: 2rem;
+    }
+   
+    .location__input{
+        font-size:1rem;
+    }
+    .location__input__btn{
+        font-size: 0.8rem;
+    }
+    .Two__Products{
+        display: grid;
+       grid-template-rows: repeat(2,1fr);
+        width: 100%;
+        padding: 0;
+        margin: auto;
+    }
+    .products{
+        width: 100%;
+    }
+    .options__child h1{
+        font-size: 2rem;
+    }
+    .options__child p{
+        font-size: 1.4rem;
+    }
+    .option__section{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+    }
+    .option__section__div {
+        display: flex;
+    }
+    .option__section__span__div img{
+        width: 80%;
+        height: 70%;
+    }
+    .option__section__info__div h3{
+        font-size: 1rem;
+    }
+    .bestseller_h2{
+        font-size: 1.8rem;
+    }
+    .input__wrapper2{
+        width: 14rem;
+    }
+    .input__wrapper2__input{
+        font-size: 0.8rem;
+    }
+    .submit__btn{
+        width: 10rem;
+        font-size: 1rem;
+        
+    }
+    .locate__me{
+        font-size: 1rem;
+        width: 10rem;
+    }
+    .input__box p{
+        font-size: 1rem;
+    }
 }
