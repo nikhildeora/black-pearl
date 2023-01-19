@@ -31,10 +31,17 @@ import spriteImage2 from "../../assets/HomeImage/spriteImage2 (2).png";
 import spriteImage3 from "../../assets/HomeImage/spriteImage2 (3).png";
 import spriteImage4 from "../../assets/HomeImage/spriteImage2 (4).png";
 import spriteImage5 from "../../assets/HomeImage/spriteImage1.png";
+import insta1 from "../../assets/HomeImage/insta1.jpg";
+import insta2 from "../../assets/HomeImage/insta2.jpg";
+import insta3 from "../../assets/HomeImage/insta3.jpg";
+import insta4 from "../../assets/HomeImage/insta4.jpg";
+import insta5 from "../../assets/HomeImage/insta5.jpg";
+import insta6 from "../../assets/HomeImage/insta6.jpg";
+import insta7 from "../../assets/HomeImage/insta7.jpg";
 
 const Homepage = () => {
   return (
-    <div style={{ marginTop: "7rem" }}>
+    <div className={styles.firstSwiper} style={{ marginTop: "7rem" }}>
       <Swiper
         slidesPerView={1}
         spaceBetween={30}
@@ -79,11 +86,10 @@ const Homepage = () => {
         <div className={styles.collection}>
           <img src={barlaCollection} alt="" />
           <div className={styles.collection__innerdiv}>
-          <img src={mograCollection} alt="mograCollection" />
-        <div className={styles.button}>
-          <button>View all Collection</button>
-        </div>
-
+            <img src={mograCollection} alt="mograCollection" />
+            <div className={styles.button}>
+              <button>View all Collection</button>
+            </div>
           </div>
           <img src={harmonyCollection} alt="" />
         </div>
@@ -155,7 +161,7 @@ const Homepage = () => {
             </div>
           </div>
         </div>
-        <div>
+        <div className={styles.instaMain}>
           <Swiper
             spaceBetween={30}
             centeredSlides={true}
@@ -203,7 +209,9 @@ const Homepage = () => {
               <div className={styles.insta}>
                 <img src={spriteImage5} alt="" />
                 <p>
-                “I got this necklace as my wedding gift and instantly loved it. It is literally the only accessory I wore on my entire honeymoon. I love how delicate and beautiful it is.”
+                  “I got this necklace as my wedding gift and instantly loved
+                  it. It is literally the only accessory I wore on my entire
+                  honeymoon. I love how delicate and beautiful it is.”
                 </p>
                 <div className={styles.instap}>
                   <p>- Tanya Gupta via Instagram</p>
@@ -213,7 +221,21 @@ const Homepage = () => {
           </Swiper>
         </div>
         <div className={styles.shopInsta}>
+          <div className={styles.caratStory}>
             <h2>Shop Our Instagram</h2>
+            <span>#MyCaratLaneStory</span>
+          </div>
+          <div className={styles.instaBig}>
+            <img src={insta1} alt="" />
+            <div className={styles.instaSmall}>
+              <img src={insta2} alt="" />
+              <img src={insta3} alt="" />
+              <img src={insta4} alt="" />
+              <img src={insta5} alt="" />
+              <img src={insta6} alt="" />
+              <img src={insta7} alt="" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
