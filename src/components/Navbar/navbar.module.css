@@ -197,7 +197,7 @@
     .navbar__secondcontainer{
         padding: 3rem 0rem 0rem 0rem;
         position: fixed;
-        top: 20.4rem;
+        top: 19rem;
         left: -100%;
     }
 
@@ -250,7 +250,7 @@
         grid-template-columns: repeat(1,1fr);
     }
     .navbar__secondcontainer{
-        top: 28.4rem;
+        top: 27.4rem;
     }
     .navbar__mainthirdpart{
         position: fixed;
@@ -259,7 +259,7 @@
         font-size: 2rem;
         width: 100%;
         background-color: #f6f4ff;
-        padding: 0.4rem 0rem 0.4rem 0rem;
+        padding: 0.9rem 0rem 0.9rem 0rem;
     }
     .navbar__showmenu{
         left: 0px;

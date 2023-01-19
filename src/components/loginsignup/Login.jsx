@@ -7,8 +7,9 @@ import styles from "../loginsignup/Login.module.css"
 export default function Login() {
   return (
     <div>
-        <div style={{ width:"100%" , height:"auto",backgroundColor:"#f9f9fa" }}  >
+      <div style={{ width: "100%", height: "auto", backgroundColor: "#f9f9fa" }}  >
         <form action="" >
+
         <div className={styles.main}>
       <div >
         <h3 style={{marginTop:"2rem"}} >
@@ -44,9 +45,10 @@ export default function Login() {
         
        </div>
         </div>
+
         </form>
-        </div>
-    
       </div>
+
+    </div>
   )
 }
