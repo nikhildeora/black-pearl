@@ -254,12 +254,12 @@
     }
     .navbar__mainthirdpart{
         position: fixed;
-        top: 6rem;
+        top: 4rem;
         left: -100%;
         font-size: 2rem;
         width: 100%;
         background-color: #f6f4ff;
-        padding: 0.4rem 0rem 0.4rem 0rem;
+        padding: 0.9rem 0rem 0.9rem 0rem;
     }
     .navbar__showmenu{
         left: 0px;
