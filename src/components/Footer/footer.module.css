@@ -1,3 +1,8 @@
+.footer__footers_maindiv{
+    position: relative;
+    bottom: 0px;
+}
+
 .footer__grid{
     display: flex;
     justify-content: space-between;
@@ -123,6 +128,12 @@
 @media screen and (max-width:560px) {
     .footer__grid{
         grid-template-columns: repeat(1,1fr);
+    }
+    .footer__links{
+        font-size: 1rem;
+    }
+    .footer__grid p{
+        font-size: 1.2rem;
     }
 }
 
