@@ -24,9 +24,9 @@
     width: 100%;
     text-align: center;
     color: #fff;
-    z-index: 1;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
+    /* z-index: 1; */
+     /* -webkit-transform: translateY(-50%); 
+    -ms-transform: translateY(-50%);  */
     transform: translateY(-50%);
 }
 .text{
@@ -103,7 +103,7 @@ input{
     display: inline-block;
     text-align: start;
     appearance: auto;
-    -webkit-rtl-ordering: logical;
+    /* -webkit-rtl-ordering: logical; */
     cursor: text;
     background-color: field;
     margin: 0em;
@@ -117,7 +117,7 @@ input{
 .location__input__btn{
     outline: none;
     user-select: none;
-    -webkit-tap-highlight-color: transparent;
+    /* -webkit-tap-highlight-color: transparent; */
     border-radius: 0px 5px 5px 0px;
     box-sizing: border-box;
     background: linear-gradient(to right, rgb(222, 87, 229), rgb(136, 99, 251)) transparent;
@@ -150,9 +150,9 @@ input{
 
 .Two__Products{
     display: flex;
-    -webkit-align-items: center;
+    /* -webkit-align-items: center;
     -webkit-box-align: center;
-    -ms-flex-align: center;
+    -ms-flex-align: center; */
     align-items: center;
     padding: 6px;
     width: 100%;
@@ -226,20 +226,13 @@ h3{
     margin: 0 auto;
 }
 .option__section{
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
+    
     display: flex;
-    -webkit-flex: 1 1 auto;
-    -ms-flex: 1 1 auto;
+    
     flex: 1 1 auto;
-    -webkit-align-items: flex-start;
-    -webkit-box-align: flex-start;
-    -ms-flex-align: flex-start;
+  
     align-items: flex-start;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
+  
     justify-content: center;
     text-align: center;
     color: #231535;
@@ -247,8 +240,7 @@ h3{
 }
 .option__section__div{
     padding: 2rem 4rem;
-    /* -webkit-flex-basis: 25%;
-    -ms-flex-preferred-size: 25%; */
+    
     flex-basis: 25%;
 }
 .option__section__span__div{
@@ -316,9 +308,9 @@ h3{
     position: relative;
   
     display: flex;
-    -webkit-align-items: center;
+    /* -webkit-align-items: center;
     -webkit-box-align: center;
-    -ms-flex-align: center;
+    -ms-flex-align: center; */
     align-items: center;
     border: 1px solid transparent;
     background: linear-gradient(white,white) padding-box,linear-gradient(to right,#de57e5,#8863fb) border-box;
@@ -381,12 +373,12 @@ h3{
     justify-content: center;
     font-size: 1.5rem;
 }
-p{
+/* p{
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-}
+} */
 .locate__me{
     font-size: 1.2rem;
     padding: 0;
@@ -446,6 +438,9 @@ button, input, select, textarea {
     color: rgb(35, 21, 53);
     font-weight: 200;
 }
+.customer_img{
+    width: 200px;
+}
 .mySwiper p{
     font-size: 1.6rem;
 }
@@ -461,7 +456,7 @@ button, input, select, textarea {
     flex: 1;
 }
 .questions h3{
-    font-size: 2.4rem;
+    font-size: 2rem;
     font-weight: 200;
     font-family: serif;
 }
@@ -471,14 +466,17 @@ button, input, select, textarea {
 .contact{
     background-color: white;
     display: flex;
-    width: 70%;
+    width: 90%;
 }
 .contact_call p{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+}
+.contact img{
+    width: 15%;
 }
 .a_href{
     font-family: 'MuliSemiBold','Helvetica Neue',Helvetica,Arial,sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: #8863fb;
     text-decoration: none;
 }
@@ -490,19 +488,15 @@ button, input, select, textarea {
     
 }
 .AccordianBtn h2{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 .AccordianPanel{
     text-align: left;
-    font-size: 1.6rem;
+    font-size: 1.1rem;
 }
 
 @media screen and (max-width:990px){
-    /* *{
-        margin: 0;
-        padding: 0;
-        width: 100%;
-    } */
+
     .main__container{
         width: 100%;
         max-height: 990px;
@@ -526,6 +520,11 @@ button, input, select, textarea {
     }
     .products{
         width: 100%;
+    }
+    .options{
+        width: 100%;
+        padding: 40px;
+       
     }
     .options__child h1{
         font-size: 2rem;
@@ -568,5 +567,21 @@ button, input, select, textarea {
     }
     .input__box p{
         font-size: 1rem;
+    }
+    .customer__query h1{
+      font-size: 2rem;
+    }
+    .mySwiper p{
+        font-size: 1.4rem;
+    }
+    .mySwiper .desc{
+        font-size: 1.2rem;
+    }
+    .Accordian{
+        display: flex;
+        flex-direction: column;
+    }
+    .customer_img{
+        width: 100px;
     }
 }

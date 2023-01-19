@@ -20,6 +20,7 @@ import {
   AccordionPanel,
   AccordionIcon,
   Box,
+  
 } from '@chakra-ui/react'
 
  const FreeTryAtHome = () => {
@@ -154,7 +155,7 @@ import {
        </div >
        <div className={styles.customer__query}>
         <h1>Hear it from Our Customers</h1>
-        <img src={customercoma} alt=""  style={{width:"200px"}}/>
+        <img src={customercoma} alt="" className={styles.customer_img} />
        </div>
 
        <Swiper
