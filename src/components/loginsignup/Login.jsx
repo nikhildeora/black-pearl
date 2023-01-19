@@ -32,7 +32,7 @@ export default function Login() {
         <div style={{marginLeft:"-8rem"}}>
         Enter Mobile Number or Email
         </div>
-       <input style={{marginLeft:"0rem" , marginTop:"0.5rem" , width:"87%" , height:"2rem" , borderColor:"rgb(173, 169, 173)",borderRadius:"0.4rem",backgroundColor:"white"}} type="text" />
+       <input style={{marginLeft:"0rem" , marginTop:"0.5rem" , width:"87%" , height:"2rem" , borderColor:"rgb(173, 169, 173)",borderRadius:"0.4rem",backgroundColor:"white",outline:"none",border:"1px solid rgb(222, 87, 229)"}} type="text" />
       </div>
       
        <div style={{height:"auto", width:"86%" , margin:"auto", marginTop:"1rem", padding:"0.5rem",marginBottom:"1rem"}} >
@@ -40,7 +40,7 @@ export default function Login() {
        
        </div>
        <div>
-       New to CaratLane?<span style={{color:"rgb(222, 87, 229)"}}>Create an Account </span>
+       New to CaratLane?<span style={{color:"rgb(222, 87, 229)",  cursor: "pointer" }}>Create an Account </span>
         
        </div>
         </div>

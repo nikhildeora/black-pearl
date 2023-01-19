@@ -11,7 +11,7 @@ export default function Signup() {
         <div className={styles.main}>
       <div >
         <h3 style={{marginTop:"2rem"}} >
-        Sign Up with CaratLane
+        Sign Up with Black pearl
         </h3>
       </div>
       <div className={styles.imagediv}>
@@ -31,41 +31,41 @@ export default function Signup() {
         <div style={{marginLeft:"-14rem"}}>
         Mobile Number
         </div>
-       <input style={{marginLeft:"0rem" , marginTop:"0.5rem" , width:"87%" , height:"2rem" , borderColor:"rgb(173, 169, 173)",borderRadius:"0.4rem",backgroundColor:"white"}} type="text" />
+       <input style={{marginLeft:"0rem" , marginTop:"0.5rem" , width:"87%" , height:"2rem" , borderColor:"rgb(173, 169, 173)",borderRadius:"0.4rem",backgroundColor:"white",paddingLeft:"0.5rem",outline:"none",border:"1px solid rgb(222, 87, 229)"}} placeholder="Mobile Number" type="text" />
       </div>
       <div style={{ marginTop:"1rem"}}  >
       <div style={{marginLeft:"-16rem"}}>
         Enter Email
         </div>
-       <input style={{marginLeft:"0rem" , marginTop:"0.5rem" , width:"87%" , height:"2rem" , borderColor:"rgb(173, 169, 173)",borderRadius:"0.4rem",backgroundColor:"white"}} type="text" />
+       <input style={{marginLeft:"0rem" , marginTop:"0.5rem" , width:"87%" , height:"2rem" , borderColor:"rgb(173, 169, 173)",borderRadius:"0.4rem",backgroundColor:"white",paddingLeft:"0.5rem",outline:"none",border:"1px solid rgb(222, 87, 229)"}} placeholder="Enter Email" type="text" />
       </div>
       <div style={{display:"flex"}}>
         <div style={{ marginTop:"1rem"}} >
         <div style={{marginLeft:"-4.5rem"}}>
         First Name
         </div>
-       <input style={{marginLeft:"1rem" , marginTop:"0.5rem" , width:"85%" , height:"2rem" , borderColor:"rgb(173, 169, 173)",borderRadius:"0.4rem",backgroundColor:"white"}} type="text" /> 
+       <input style={{marginLeft:"1rem" , marginTop:"0.5rem" , width:"85%" , height:"2rem" , borderColor:"rgb(173, 169, 173)",borderRadius:"0.4rem",backgroundColor:"white",paddingLeft:"0.5rem",outline:"none",border:"1px solid rgb(222, 87, 229)"}} placeholder="First Name"  type="text" /> 
         </div>
         <div style={{ marginTop:"1rem"}} >
         <div style={{marginLeft:"-4.5rem"}}>
         Last Name
         </div>
-       <input style={{marginLeft:"-0.1rem" , marginTop:"0.5rem" , width:"85%" , height:"2rem" , borderColor:"rgb(173, 169, 173)",borderRadius:"0.4rem",backgroundColor:"white"}} type="text" /> 
+       <input style={{marginLeft:"-0.1rem" , marginTop:"0.5rem" , width:"85%" , height:"2rem" , borderColor:"rgb(173, 169, 173)",borderRadius:"0.4rem",backgroundColor:"white",paddingLeft:"0.5rem",outline:"none",border:"1px solid rgb(222, 87, 229)"}} placeholder="Last Name" type="text" /> 
         </div>
       </div>
       <div style={{ marginTop:"1rem"}}>
         <div style={{marginLeft:"-16.5rem"}}>
         Password
         </div>
-       <input style={{marginLeft:"0rem" , marginTop:"0.5rem" , width:"87%" , height:"2rem" , borderColor:"rgb(173, 169, 173)",borderRadius:"0.4rem",backgroundColor:"white"}} type="text" />
+       <input style={{marginLeft:"0rem" , marginTop:"0.5rem" , width:"87%" , height:"2rem" , borderColor:"rgb(173, 169, 173)",borderRadius:"0.4rem",backgroundColor:"white",paddingLeft:"0.5rem",outline:"none",border:"1px solid rgb(222, 87, 229)"}} placeholder="Password" type="text" />
       </div>
       <div style={{ marginTop:"1rem"}}>
         <div style={{marginLeft:"-12.7rem"}}>
        Confirm Password
         </div>
-       <input style={{marginLeft:"0rem" , marginTop:"0.5rem" , width:"87%" , height:"2rem" , borderColor:"rgb(173, 169, 173)",borderRadius:"0.4rem",backgroundColor:"white"}} type="text" />
+       <input style={{marginLeft:"0rem" , marginTop:"0.5rem" , width:"87%" , height:"2rem" , borderColor:"rgb(173, 169, 173)",borderRadius:"0.4rem",backgroundColor:"white", paddingLeft:"0.5rem",outline:"none",border:"1px solid rgb(222, 87, 229)"}} placeholder="Confirm Password" type="text" />
       </div>
-      <div style={{margin:"auto", marginTop:"1rem"}}>
+      <div style={{margin:"auto", marginTop:"1rem", }}>
          <input type="radio" name='gender' />
           <label> Male </label>
          <input type="radio" name='gender' />
@@ -85,7 +85,7 @@ export default function Signup() {
        
        </div>
        <div>
-       Already have an account? <span style={{color:"rgb(222, 87, 229)"}}>LOG IN </span>
+       Already have an account? <span style={{color:"rgb(222, 87, 229)" , cursor: "pointer" }}>LOG IN </span>
         
        </div>
         </div>
