@@ -3,6 +3,7 @@
 
 
 import "./App.css";
+import AllRoutes from "./components/AllRoutes";
 import Footer from "./components/Footer/Footer";
 import FreeTryAtHome from "./components/Freetry/FreeTryAtHome";
 
@@ -16,7 +17,7 @@ function App() {
       <Navbar />
 
 
-      
+      {/* <AllRoutes /> */}
       <Homepage />
       {/* <FreeTryAtHome /> */}
 

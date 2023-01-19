@@ -1,10 +1,14 @@
 import React from 'react'
 import {Route,Routes} from "react-router-dom"
+import Homepage from './Homepage/Homepage';
 
 
 const AllRoutes = () => {
   return (
-    <Routes></Routes>
+    <Routes>
+        <Route path='/' element={<Homepage />} />
+        
+    </Routes>
   )
 }
 
