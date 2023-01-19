@@ -3,6 +3,9 @@
   /* only margin */
 }
 
+.swiper > img {
+  width: 100%;
+}
 .ankletRing {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

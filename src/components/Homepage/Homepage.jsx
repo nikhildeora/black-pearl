@@ -27,7 +27,7 @@ import harmonyCollection from "../../assets/HomeImage/harmonyCollection.jpg";
 
 const Homepage = () => {
   return (
-    <div>
+    <div style={{ marginTop: "7rem" }}>
       <Swiper
         slidesPerView={1}
         spaceBetween={30}
@@ -39,13 +39,13 @@ const Homepage = () => {
         modules={[Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide>
+        <SwiperSlide className={styles.swiper}>
           <img src={slider1} alt="slider1" />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className={styles.swiper}>
           <img src={slider2} alt="slider2" />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className={styles.swiper}>
           <img src={slider3} alt="slider3" />
         </SwiperSlide>
       </Swiper>
