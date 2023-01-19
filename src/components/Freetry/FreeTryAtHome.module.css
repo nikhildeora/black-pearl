@@ -499,7 +499,8 @@ button, input, select, textarea {
 
     .main__container{
         width: 100%;
-        max-height: 990px;
+        /* max-height: 990px; */
+        /* margin-bottom: 100px; */
     }
    .text__container h2{
     font-size: 2rem;
