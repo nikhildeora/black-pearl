@@ -51,7 +51,7 @@ const Homepage = () => {
         }}
         navigation={true}
         modules={[Pagination, Navigation]}
-        className="mySwiper"
+        className='mySwiper'
       >
         <SwiperSlide className={styles.swiper}>
           <img src={slider1} alt="slider1" />
@@ -83,22 +83,28 @@ const Homepage = () => {
           <img src={stunningBangles} alt="stunningBangles" />
           <img src={mensRing} alt="mensRing" />
         </div>
+
+
+
         <div className={styles.collection}>
           <img src={barlaCollection} alt="" />
-          <div className={styles.collection__innerdiv}>
             <img src={mograCollection} alt="mograCollection" />
+          
+          <img src={harmonyCollection} alt="" />
+        </div>
+        
             <div className={styles.button}>
               <button>View all Collection</button>
             </div>
-          </div>
-          <img src={harmonyCollection} alt="" />
-        </div>
+         
+
         <div className={styles.milestone}>
           <img src={markMilestoneLeft} alt="" />
           <img src={diamondStuddedRight} alt="" />
           <img src={roadLeft} alt="" />
           <img src={clearanceRight} alt="" />
         </div>
+
         <div className={styles.goldExchange}>
           <div>
             <img src={goldExchange} alt="" />
@@ -113,6 +119,7 @@ const Homepage = () => {
             <button>Know More</button>
           </div>
         </div>
+
         <div className={styles.trustTanishq}>
           <img src={taniksh} alt="tanishq" />
           <p>
@@ -223,17 +230,20 @@ const Homepage = () => {
         <div className={styles.shopInsta}>
           <div className={styles.caratStory}>
             <h2>Shop Our Instagram</h2>
-            <span>#MyCaratLaneStory</span>
+            <span>#MyBlackPearlStory</span>
           </div>
+
           <div className={styles.instaBig}>
             <img src={insta1} alt="" />
             <div className={styles.instaSmall}>
+              <div>
               <img src={insta2} alt="" />
-              <img src={insta3} alt="" />
-              <img src={insta4} alt="" />
-              <img src={insta5} alt="" />
-              <img src={insta6} alt="" />
-              <img src={insta7} alt="" />
+              </div>
+              <div><img src={insta3} alt="" /></div>
+              <div><img src={insta4} alt="" /></div>
+              <div><img src={insta5} alt="" /></div>
+              <div><img src={insta6} alt="" /></div>
+              <div><img src={insta7} alt="" /></div>
             </div>
           </div>
         </div>

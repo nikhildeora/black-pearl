@@ -23,7 +23,7 @@ import twitter from "../../assets/twitter.png"
 
 export default function Footer() {
     return (
-        <>
+        <div className={styles.footer__footers_maindiv}>
             <div className={styles.footer__maindiv}
                 color={useColorModeValue('gray.700', 'gray.200')}>
                 <Container as={Stack} className={styles.footer__container}>
@@ -153,6 +153,6 @@ export default function Footer() {
                
  
             </div>
-        </>
+        </div>
     );
 }
