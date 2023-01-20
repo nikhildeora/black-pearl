@@ -2,7 +2,9 @@ import React from 'react'
 
 
 import { Box,Text, Image, Checkbox} from '@chakra-ui/react'
-import Styles from "../Arrival/Arrival.module.css"
+
+import Styles from "./Arrival.module.css"
+
 import { Select } from '@chakra-ui/react'
 import { useState } from 'react'
 import { useEffect } from 'react'
@@ -85,7 +87,7 @@ function Arrival() {
             </div>
           </div>
 
-      {/* <AllRoutes/> */}
+     
     </div>
   )
 }
