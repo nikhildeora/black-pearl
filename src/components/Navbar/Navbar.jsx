@@ -25,7 +25,7 @@ const Navbar = () => {
                     </li>
                     <li className={styles.navbar__pagesroutes_link_div}>
                         <i className={`uil uil-briefcase-alt ${styles.navbar__top_icons}`}></i>
-                        PLAN OF PURCHASE
+                       <RouterLink to={"/plan"}> PLAN OF PURCHASE </RouterLink>
                     </li>
                     <li className={styles.navbar__pagesroutes_link_div}>
                         <i className={`uil uil-gold ${styles.navbar__top_icons}`}></i>

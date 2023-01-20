@@ -39,7 +39,7 @@ const PlanOfPurchase = () => {
         <div className={styles.how_it_works__child}>
           <p>How It Works</p>
           <h1>
-            It’s quick and simple, just like popping a bubble. It's so
+            It's quick and simple, just like popping a bubble. It's so
             hassle-free that the only thing you need to worry about is choosing
             the outfit you'll be wearing with your favourite jewellery.
           </h1>
@@ -47,7 +47,7 @@ const PlanOfPurchase = () => {
             <button className={styles.button__play}>Plan Now</button>
           </div>
           <p>
-            You don’t have to wait till the 6th month to redeem. Refer to the
+            You don't have to wait till the 6th month to redeem. Refer to the
             calculator below to feel the joy sooner!
           </p>
         </div>
@@ -72,7 +72,7 @@ const PlanOfPurchase = () => {
               <h2>Our gift* to you</h2>
               <p>
                 At the end of 6 months, CARATLANE will issue a gift* value
-                equivalent to 30% of your first month’s plan amount.
+                equivalent to 30% of your first month's plan amount.
               </p>
             </div>
           </div>
@@ -95,14 +95,14 @@ const PlanOfPurchase = () => {
           <p>Calculate PoP!</p>
           <h1>
             This plan will turn that frown upside down and make your smile PoP!
-            Here’s how you can calculate your purchase better. Enter the amount
-            you’d like to keep aside with us for 6 months and see our gift*
+            Here's how you can calculate your purchase better. Enter the amount
+            you'd like to keep aside with us for 6 months and see our gift*
             value.
           </h1>
           <div className={styles.button__div}>
             <button className={styles.button__play}>Plan Now</button>
           </div>
-          {/* <p>You don’t have to wait till the 6th month to redeem. Refer to the calculator below to feel the joy sooner!</p> */}
+          {/* <p>You don't have to wait till the 6th month to redeem. Refer to the calculator below to feel the joy sooner!</p> */}
         </div>
         <div className={styles.how_it_works__child2}>
           <div>
@@ -182,7 +182,7 @@ const PlanOfPurchase = () => {
         <div className={styles.how_it_works__child}>
           <p>Frequently Asked Questions</p>
           <h1>
-            If it’s still too good to be true, read through these questions to
+            If it's still too good to be true, read through these questions to
             get a clearer picture. You can also drop in your number and we will
             get in touch regarding your PoP!
           </h1>
