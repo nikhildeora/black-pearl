@@ -591,7 +591,7 @@ textarea {
 }
 
 
-@media screen and (max-width:560px) {
+@media screen and (max-width:660px) {
   
   .video__mob{
         display: block;
@@ -629,6 +629,15 @@ textarea {
     }
     .option__section__span__div img{
         height: 100%;
+        width: 100%;
+    }
+    .option__section__info__div{
+        text-align: left;
+        font-size: 0.7rem;
+    }
+    .option__section__info__div h3{
+        font-size: 0.8rem;
+        text-align: left;
     }
     .bestseller_h2{
         font-size: 1.5rem;
@@ -665,4 +674,24 @@ textarea {
     .mySwiper .desc{
         font-size: 1rem;
     }
+    .questions h3{
+        font-size: 1.2rem;
+    }
+    .contact img{
+    width: 2.5rem;
+    height: 3rem;
+    }
+    .contact_call p{
+        font-size: 0.9rem;
+    }
+    .a_href{
+        font-size: 1rem;
+    }
+    .AccordianBtn h2{
+        font-size: 1.1rem;
+    }
+    .AccordianPanel{
+        font-size: 0.8rem;
+    }
+
 }
