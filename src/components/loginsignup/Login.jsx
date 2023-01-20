@@ -12,8 +12,8 @@ export default function Login() {
 
         <div className={styles.main}>
       <div >
-        <h3 style={{marginTop:"2rem"}} >
-        Login to CaratLane
+        <h3 style={{marginTop:"2rem",marginLeft:"7rem"}} >
+        Login to Black pearl
         </h3>
       </div>
       <div className={styles.imagediv}>
@@ -30,10 +30,10 @@ export default function Login() {
         OR
       </div>
       <div style={{ marginTop:"1rem"}}>
-        <div style={{marginLeft:"-8rem"}}>
+        <div style={{marginLeft:"-7rem"}}>
         Enter Mobile Number or Email
         </div>
-       <input style={{marginLeft:"0rem" , marginTop:"0.5rem" , width:"87%" , height:"2rem" , borderColor:"rgb(173, 169, 173)",borderRadius:"0.4rem",backgroundColor:"white",outline:"none",border:"1px solid rgb(222, 87, 229)"}} type="text" />
+       <input style={{marginLeft:"0rem" , marginTop:"0.5rem" , width:"87%" , height:"2rem" , borderColor:"rgb(173, 169, 173)",borderRadius:"0.4rem",backgroundColor:"white",outline:"none",border:"1px solid rgb(222, 87, 229)",padding:"0.5rem"}} type="text" placeholder='Enter Mobile Number or Email' />
       </div>
       
        <div style={{height:"auto", width:"86%" , margin:"auto", marginTop:"1rem", padding:"0.5rem",marginBottom:"1rem"}} >

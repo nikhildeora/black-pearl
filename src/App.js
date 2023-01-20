@@ -19,12 +19,15 @@ function App() {
     <div className="App">
       <Navbar />
 
+
       <Detail />
       {/* <AllRoutes /> */}
       {/* <Homepage /> */}
       {/* <FreeTryAtHome /> */}
 
-      <Footer />
+
+      <Footer /> */}
+    
     </div>
   );
 }
