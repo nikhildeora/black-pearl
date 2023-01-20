@@ -17,9 +17,13 @@ function App() {
       <Navbar />
 
 
+   
+     
+
       {/* <AllRoutes /> */}
       <Homepage />
       {/* <FreeTryAtHome /> */}
+
 
 
 
