@@ -3,25 +3,27 @@
 
 
 import "./App.css";
-import AllRoutes from "./components/AllRoutes";
+// import AllRoutes from "./components/AllRoutes";
 import Footer from "./components/Footer/Footer";
-import FreeTryAtHome from "./components/Freetry/FreeTryAtHome";
+// import FreeTryAtHome from "./components/Freetry/FreeTryAtHome";
 
-import Homepage from "./components/Homepage/Homepage";
+// import Homepage from "./components/Homepage/Homepage";
 
 import Navbar from "./components/Navbar/Navbar";
+import PlanOfPurchase from "./components/Plan/PlanOfPurchase";
+
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-
-
+     
+<PlanOfPurchase/>
    
      
 
       {/* <AllRoutes /> */}
-      <Homepage />
+      {/* <Homepage /> */}
       {/* <FreeTryAtHome /> */}
 
 
