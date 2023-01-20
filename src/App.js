@@ -3,6 +3,7 @@
 
 
 import "./App.css";
+import Arrival from "./components/Arrival/Arrival";
 import Footer from "./components/Footer/Footer";
 import FreeTryAtHome from "./components/Freetry/FreeTryAtHome";
 
@@ -13,15 +14,15 @@ import Navbar from "./components/Navbar/Navbar";
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      {/* <Navbar />
 
       
        <Homepage /> 
-      {/* <FreeTryAtHome/> */}
+      <FreeTryAtHome/> */}
      
+      <Arrival/>
 
-
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
