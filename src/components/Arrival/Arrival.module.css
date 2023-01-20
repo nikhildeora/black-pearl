@@ -20,12 +20,14 @@
     display: flex;
     flex-direction: column;
 }
+
 .Data_container{
     display: grid;
-    grid-template-columns: 400px auto;
+    grid-template-columns: 30% 70%;
+    
 }
 .box{
-    background-color: rebeccapurple;
+    /* background-color: rebeccapurple; */
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap:10px;
@@ -40,6 +42,33 @@
     flex-direction: column;
     row-gap: 15px;
 }
+.Priceheading{
+
+    color: black;
+    font-weight: 500;
+    font-size: 22px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    /* background-color: lightgray; */
+    display: inline;
+  
+}
+.priceData{
+    font-size: larger;
+    line-height: 30px;
+   
+    /* background-color: blueviolet; */
+}
+.priceData p{
+    /* background-color: aquamarine ; */
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.priceData p:hover{
+    background-image: linear-gradient(to right, rgb(222, 87, 229) 0%, rgb(136, 99, 251) 100%);
+    
+}
+
 .filterByPrice div{
     display: flex;
     flex-direction: column;
@@ -48,6 +77,24 @@
     margin-top: 25px;
     
 }
+.priceHeading{
+    background-color: lightgray;
+    padding: 12px 35px;
+    font-size: 25px;
+    font-weight: 600;
+    width: 100%;
+}
+.Filter{
+    font-weight: 600;
+    font-size: 25px;
+    margin-top: 25px;
+    background-color: lightgray;
+    padding: 15px 0px;
+}
+.priceCheckbox{
+    font-weight: 500;
+    font-size: 20px;
+}
 .marquee{
     display: none;
 }
@@ -55,21 +102,32 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 25px;
+    margin-top: 15px;
 }
 .button_container Button{
-    background-color: aquamarine;
+    background-image: linear-gradient(to right, rgb(222, 87, 229) 0%, rgb(136, 99, 251) 100%);
     cursor: pointer;
+    color: white;
     border: none;
     font-size: 1.2rem;
     color: rgb(29, 27, 27);
     outline: none;
     font-weight: 500;
     display: flex;
-    padding: 5px 8px !important;
+    padding: 5px 12px !important;
     margin-left: 15px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
 }
 .card{
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    width: 325px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-top: 15px;
+    line-height: 45px;
+    border-radius: 5px;
 }
 .price{
     margin-top: 10px;
