@@ -542,52 +542,9 @@
     }
   ],
   "cart": [
-    {
-      "id": 31,
-      "image": "https://cdn.caratlane.com/media/catalog/product/cache/6/image/480x480/9df78eab33525d08d6e5fb8d27136e95//S/R/SR03331-YGP900_11_listfront.jpg",
-      "price": 97685,
-      "name": "Prin Diamond Solitaire Ring ",
-      "shipping": "Sold by BHFO",
-      "star": 3,
-      "category": "solitaire"
-    },
-    {
-      "id": 2,
-      "image": "https://cdn.caratlane.com/media/catalog/product/cache/6/image/480x480/9df78eab33525d08d6e5fb8d27136e95//J/R/JR07311-1YP6P0_11_listfront.jpg",
-      "price": 35176,
-      "name": "Mutyaa Pearl Ring",
-      "shipping": "Sold by BHFO",
-      "star": 3,
-      "category": "rings"
-    },
-    {
-      "id": 21,
-      "image": "https://cdn.caratlane.com/media/catalog/product/cache/6/image/480x480/9df78eab33525d08d6e5fb8d27136e95//U/T/UT00702-1Y0000_11_listfront.jpg",
-      "price": 6692,
-      "name": "Chopper Personalised Kids' Gold Bracelet",
-      "shipping": "Sold by BHFO",
-      "star": 4,
-      "category": "bracelet"
-    }
+   
   ],
   "wishlist": [
-    {
-      "id": 1,
-      "image": "https://cdn.caratlane.com/media/catalog/product/cache/6/image/480x480/9df78eab33525d08d6e5fb8d27136e95//J/R/JR03126-WGP900_11_listfront.jpg",
-      "price": 61481,
-      "name": "Emma Flora Diamond Ring",
-      "shipping": "Sold by BHFO",
-      "star": 4,
-      "category": "rings"
-    },
-    {
-      "id": 5,
-      "image": "https://cdn.caratlane.com/media/catalog/product/cache/6/image/480x480/9df78eab33525d08d6e5fb8d27136e95//J/R/JR07315-1YP6P0_11_listfront.jpg",
-      "price": 69949,
-      "name": "Malaya Pearl Ring",
-      "shipping": "Sold by BHFO",
-      "star": 4,
-      "category": "rings"
-    }
+   
   ]
 }
