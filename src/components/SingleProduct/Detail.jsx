@@ -25,6 +25,7 @@ export default function Detail() {
     }
     getData();
   }, []);
+  
   return (
     <div>
       <div className={styles.containerDetails}>

@@ -19,8 +19,9 @@ function App() {
     <div className="App">
       <Navbar />
 
-      <Detail />
-      {/* <AllRoutes /> */}
+      {/* <Detail /> */}
+      <AllRoutes />
+      {/* <Arrival /> */}
       {/* <Homepage /> */}
       {/* <FreeTryAtHome /> */}
 
