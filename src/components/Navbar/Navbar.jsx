@@ -39,9 +39,8 @@ const Navbar = () => {
 
 
                 <ul type="none" className={toggle ? `${styles.navbar__mainthirdpart} ${styles.navbar__showmenu}` : styles.navbar__mainthirdpart}>
-                    <li><i className={`fa-sharp fa-solid fa-location-dot ${styles.navbar__mainthirdpart_icon}`}></i>  location </li>
-                    <li> <img className={styles.Indiaflag} src={Indiaflag} alt="flag" /> </li>
-                    <li><i className={`fa-solid fa-user ${styles.navbar__mainthirdpart_icon}`}></i></li>
+                    <li><i className={`fa-solid fa-user ${styles.navbar__mainthirdpart_icon}`}></i>{" "}Login</li>
+                    <li><i className={`fa-solid fa-user ${styles.navbar__mainthirdpart_icon}`}></i>{" "}Singup</li>
                     <li><i className={`fa-solid fa-heart ${styles.navbar__mainthirdpart_icon}`}></i></li>
                     <li><i className={`fa-solid fa-bag-shopping ${styles.navbar__mainthirdpart_icon}`}></i></li>
                 </ul>
