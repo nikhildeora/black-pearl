@@ -1,21 +1,20 @@
 import React from 'react'
 
 
-import { Box, Text, Image, Checkbox } from '@chakra-ui/react'
+import { Box, Image } from '@chakra-ui/react'
 
 import Styles from "./Arrival.module.css"
 
-import { Select } from '@chakra-ui/react'
 import { useState } from 'react'
 import { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import findstore from "../../assets/findstoreimg.png"
 import SingleProduct from '../SingleItem/SingleItem'
-import { async } from 'q'
+
 
 function Arrival() {
  
-  let [data, setData] = useState([]);
+  const [data, setData] = useState([]);
   const { category } = useParams();
   const [heroimg, setHeroimg] = useState("")
  const [pselect,setPselect] = useState(1)
@@ -154,6 +153,6 @@ async function changeCateg(switchcateg){
   )
 }
 
-export default Arrival
+export default Arrival;
 
 
