@@ -1,0 +1,164 @@
+html {
+  scroll-behavior: smooth;
+}
+.containerDetails {
+  margin-top: 8rem;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #f9f9fa;
+}
+.prodImg {
+  margin: 2rem auto;
+  width: 40%;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.prodDetails {
+  /* border: 1px solid red; */
+  text-align: left;
+  width: 50%;
+  margin: auto;
+  padding: 5rem;
+}
+
+.prodDetails > h1 {
+  font-family: "BegumMedium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+  color: #33363e;
+}
+.prodDetails > a {
+  color: palevioletred;
+  cursor: pointer;
+}
+.prodDetails > h3 {
+  font-size: 2rem;
+  color: #231535;
+}
+.button {
+  margin: auto;
+}
+.button > button {
+  background: linear-gradient(
+      to right,
+      rgb(222, 87, 229) 0%,
+      rgb(136, 99, 251) 100%
+    )
+    0px 0px / auto;
+  width: 30%;
+  height: 3rem;
+  border-radius: 1rem;
+  color: white;
+  cursor: pointer;
+  margin-right: 5%;
+}
+.tick {
+  margin-top: 1rem;
+}
+.prodDetails2 {
+  margin: 2rem;
+  text-align: left;
+}
+.prodDetails2 > h2 {
+  font-size: 2.4rem;
+  font-family: BegumMedium, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  color: rgb(51, 54, 62);
+}
+.list {
+  list-style-type: none;
+}
+.list li {
+  line-height: 2rem;
+}
+.prodList {
+  display: flex;
+  justify-content: space-between;
+}
+
+.singleProd {
+  display: flex;
+  justify-content: space-evenly;
+}
+.spriteImage {
+  background-color: #231535;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: auto;
+}
+
+.spriteImage h3 {
+  color: white;
+  /* font-size: 1rem; */
+}
+
+.spriteImage p {
+  color: rgb(196, 173, 225);
+}
+
+.spriteImage img {
+  width: 10vw;
+}
+
+.spriteImage > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 30vw;
+}
+@media screen and (max-width: 990px) {
+  .spriteImage > div {
+    flex-direction: column;
+  }
+
+  .spriteImage p {
+    display: none;
+  }
+  .spriteImage h3 {
+    font-size: 0.8rem;
+  }
+  .containerDetails {
+    flex-direction: column;
+    width: 100%;
+  }
+  .prodDetails {
+    width: 100%;
+  }
+  .prodDetails2 > h2 {
+    font-size: 2rem;
+  }
+  .prodList {
+    flex-direction: column;
+  }
+  .prodList > img {
+    display: none;
+  }
+  .singleProd {
+    flex-direction: column;
+  }
+  .prodImg > img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .button > button {
+    width: 100%;
+    font-size: 1rem;
+    margin: 1rem 0;
+  }
+  .prodDetails > h1 {
+    font-family: "BegumMedium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+    color: #33363e;
+  }
+  .prodDetails > a {
+    font-size: 0.8rem;
+  }
+  .prodDetails > h3 {
+    font-size: 1rem;
+  }
+}
