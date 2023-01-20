@@ -7,11 +7,9 @@
   width: 100%;
 }
 
-
 .swiper > img {
   width: 100%;
 }
-
 
 .ankletRing {
   display: grid;
@@ -67,16 +65,16 @@
   transform: scale(1.1);
 }
 
-.collection>img:nth-child(1){
+.collection > img:nth-child(1) {
   height: 95%;
-   align-self: flex-end;
+  align-self: flex-end;
 }
-.collection>img:nth-child(3){
+.collection > img:nth-child(3) {
   height: 95%;
-   align-self: flex-end;
+  align-self: flex-end;
 }
 
-.button{
+.button {
   width: 22%;
   margin: auto;
   position: relative;
@@ -182,6 +180,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: auto;
+  
 }
 
 .spriteImage h3 {
@@ -244,7 +243,7 @@
 
 .instaSmall {
   display: grid;
-  grid-template-columns: repeat(3,auto);
+  grid-template-columns: repeat(3, auto);
   overflow: hidden;
 }
 
@@ -253,18 +252,16 @@
   overflow: hidden;
 }
 
-
-
-.instaBig >img {
-  width: 40%; 
+.instaBig > img {
+  width: 40%;
   transition: transform 0.5s, filter 1.5s ease-in-out;
 }
-.instaSmall>div{
+.instaSmall > div {
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
-.instaSmall  img {
+.instaSmall img {
   width: 100%;
   height: 100%;
   transition: transform 0.5s, filter 1.5s ease-in-out;
@@ -272,32 +269,30 @@
 
 .instaBig > img:hover {
   transform: scale(1.1);
-  
 }
 
-.instaSmall  img:hover {
+.instaSmall img:hover {
   transform: scale(1.1);
-  
 }
 
 @media screen and (max-width: 990px) {
-  .collection{
-    grid-template-columns: repeat(2,1fr);
+  .collection {
+    grid-template-columns: repeat(2, 1fr);
   }
-  .collection>img:nth-child(1){
+  .collection > img:nth-child(1) {
     height: 95%;
-     align-self: flex-start;
+    align-self: flex-start;
   }
-  .collection>img:nth-child(2){
+  .collection > img:nth-child(2) {
     height: 95%;
-     align-self: flex-start;
+    align-self: flex-start;
   }
-  .collection>img:nth-child(3){
+  .collection > img:nth-child(3) {
     height: 100%;
     position: relative;
     left: 55%;
   }
-  .button{
+  .button {
     width: 52%;
     top: 0rem;
   }
@@ -308,7 +303,7 @@
   .spriteImage p {
     display: none;
   }
-  .spriteImage he {
+  .spriteImage h3 {
     font-size: 0.8rem;
   }
   .goldExchangetext > button {
@@ -336,20 +331,20 @@
 }
 
 @media screen and (max-width: 560px) {
-  .collection{
-    grid-template-columns: repeat(1,1fr);
+  .collection {
+    grid-template-columns: repeat(1, 1fr);
   }
-  .collection>img:nth-child(1){
+  .collection > img:nth-child(1) {
     height: 98%;
   }
-  .collection>img:nth-child(2){
+  .collection > img:nth-child(2) {
     height: 98%;
   }
-  .collection>img:nth-child(3){
+  .collection > img:nth-child(3) {
     height: 98%;
     left: 0px;
   }
-  .button{
+  .button {
     width: 52%;
   }
   .firstSwiper {
