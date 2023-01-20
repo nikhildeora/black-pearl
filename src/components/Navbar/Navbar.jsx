@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import styles from "./navbar.module.css"
 import logo from "../../assets/logo.png"
 import Indiaflag from "../../assets/Indiaflag.png"
+import {Link as RouterLink} from "react-router-dom"
 
 const Navbar = () => {
     const [toggle, setToggle] = useState(false)
@@ -11,12 +12,12 @@ const Navbar = () => {
             <div className={styles.navbar__maincontainer}>
                 <div className={styles.navbar__logodiv}>
                     {toggle ? <i onClick={() => setToggle(!toggle)} className={`uil uil-times ${styles.navbar__hemburger_icon}`}></i> : <i onClick={() => setToggle(!toggle)} className={`uil uil-bars ${styles.navbar__hemburger_icon}`}></i>}
-                    <img className={styles.navbar__logo} src={logo} alt="logo" />
+                    <RouterLink to={"/"}> <img className={styles.navbar__logo} src={logo} alt="logo" /></RouterLink>
                 </div>
                 <ul type="none" className={toggle ? `${styles.navbar__pagesroutes} ${styles.navbar__showmenu}` : styles.navbar__pagesroutes}>
                     <li className={styles.navbar__pagesroutes_link_div}>
                         <i className={`uil uil-house-user ${styles.navbar__top_icons}`}></i>
-                        FREE TRY AT HOME
+                       <RouterLink to={"/freetry"}>  FREE TRY AT HOME </RouterLink>
                     </li>
                     <li className={styles.navbar__pagesroutes_link_div}>
                         <i className={`uil uil-store-alt ${styles.navbar__top_icons}`}></i>

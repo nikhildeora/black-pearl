@@ -20,8 +20,8 @@ function App() {
    
      
 
-      {/* <AllRoutes /> */}
-      <Homepage />
+      <AllRoutes />
+      {/* <Homepage /> */}
       {/* <FreeTryAtHome /> */}
 
 

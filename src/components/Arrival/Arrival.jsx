@@ -2,7 +2,7 @@ import React from 'react'
 
 
 import { Box,Text, Image, Checkbox} from '@chakra-ui/react'
-import Styles from "../Page/Arrival.module.css"
+import Styles from "./Arrival.module.css"
 import { Select } from '@chakra-ui/react'
 
 function Arrival() {
