@@ -10,7 +10,7 @@ import { useState } from 'react'
 import { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import findstore from "../../assets/findstoreimg.png"
-import SingleProduct from '../SingleProduct/SingleProduct'
+import SingleProduct from '../SingleItem/SingleItem'
 import { async } from 'q'
 
 function Arrival() {

@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from "./singleproduct.module.css"
+import styles from "./singleitem.module.css"
 import { useNavigate } from "react-router-dom"
 
 const SingleProduct = (props) => {
