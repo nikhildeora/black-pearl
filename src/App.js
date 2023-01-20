@@ -20,7 +20,7 @@ function App() {
       <Navbar />
 
       <Detail />
-      <AllRoutes />
+      {/* <AllRoutes /> */}
       {/* <Homepage /> */}
       {/* <FreeTryAtHome /> */}
 
