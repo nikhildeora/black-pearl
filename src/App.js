@@ -16,12 +16,13 @@ function App() {
       <Navbar />
 
       
-       <Homepage /> 
-      {/* <FreeTryAtHome/> */}
-     
+       {/* <Homepage /> 
+       <FreeTryAtHome/>
+       
 
 
-      <Footer />
+      <Footer /> */}
+    
     </div>
   );
 }
