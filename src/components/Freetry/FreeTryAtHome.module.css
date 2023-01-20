@@ -24,9 +24,9 @@
     width: 100%;
     text-align: center;
     color: #fff;
-    /* z-index: 1; */
-     /* -webkit-transform: translateY(-50%); 
-    -ms-transform: translateY(-50%);  */
+    z-index: 1; 
+      -webkit-transform: translateY(-50%); 
+    -ms-transform: translateY(-50%); 
     transform: translateY(-50%);
 }
 .text{
@@ -584,5 +584,73 @@ button, input, select, textarea {
     }
     .customer_img{
         width: 100px;
+    }
+}
+
+@media screen and (max-width:560px) {
+    
+   .text{
+    margin-top: 5rem;
+    font-size: 1.2rem;
+   }
+    .text__container {
+       padding: auto;
+       margin: auto;
+    }
+    .product__info h3{
+        font-size: 1.5rem;
+    }
+    .product__info p{
+        font-size: 1rem;
+    }
+    .options__child h1{
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    .options__child p{
+        font-size: 1.2rem;
+        justify-content: center;
+        text-align: center;
+    }
+    .option__section{
+        width: 100%;
+    }
+    .option__section__span__div img{
+        height: 100%;
+    }
+    .bestseller_h2{
+        font-size: 1.5rem;
+    }
+    .input__wrapper2{
+        width: 10rem;
+    }
+    .input__wrapper2__input{
+        font-size: 0.8rem;
+    }
+    .submit__btn{
+        width: 8rem;
+        font-size: 1rem;
+        
+    }
+    .locate__me{
+        font-size: 1rem;
+        width: 8rem;
+    }
+    .p__div p:first-child{
+        font-size: 1.2rem;
+       
+    }
+    .p__div p:last-child{
+        font-size: 1.2rem;
+       
+    }
+    .customer__query h1{
+        font-size: 1.5rem;
+    }
+    .mySwiper p{
+        font-size: 1.3rem;
+    }
+    .mySwiper .desc{
+        font-size: 1rem;
     }
 }
