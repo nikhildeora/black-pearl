@@ -1,6 +1,4 @@
-
 // import logo from './logo.svg';
-
 
 import "./App.css";
 
@@ -14,27 +12,19 @@ import FreeTryAtHome from "./components/Freetry/FreeTryAtHome";
 import Homepage from "./components/Homepage/Homepage";
 
 import Navbar from "./components/Navbar/Navbar";
+import Detail from "./components/SingleProduct/Detail";
 
 function App() {
   return (
     <div className="App">
-       <Navbar />
+      <Navbar />
 
-
-     
-    
-
-    
-
-      <AllRoutes />
+      <Detail />
+      {/* <AllRoutes /> */}
       {/* <Homepage /> */}
       {/* <FreeTryAtHome /> */}
 
-
-
-
       <Footer />
-
     </div>
   );
 }

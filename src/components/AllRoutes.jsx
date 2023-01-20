@@ -3,7 +3,7 @@ import {Route,Routes} from "react-router-dom"
 import Arrival from './Arrival/Arrival';
 import FreeTryAtHome from './Freetry/FreeTryAtHome';
 import Homepage from './Homepage/Homepage';
-import Detail from './loginsignup/Detail';
+import Detail from './SingleProduct/Detail';
 import Login from './loginsignup/Login';
 import Signup from './loginsignup/Signup';
 
