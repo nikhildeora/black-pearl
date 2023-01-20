@@ -39,7 +39,11 @@ import insta5 from "../../assets/HomeImage/insta5.jpg";
 import insta6 from "../../assets/HomeImage/insta6.jpg";
 import insta7 from "../../assets/HomeImage/insta7.jpg";
 
+
 const Homepage = () => {
+
+
+
   return (
     <div className={styles.firstSwiper} style={{ marginTop: "7rem" }}>
       <Swiper
