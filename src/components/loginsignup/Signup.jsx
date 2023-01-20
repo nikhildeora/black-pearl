@@ -10,7 +10,7 @@ export default function Signup() {
         <form action="" >
         <div className={styles.main}>
       <div >
-        <h3 style={{marginTop:"2rem"}} >
+        <h3 style={{marginTop:"2rem",marginLeft:"6rem"}} >
         Sign Up with Black pearl
         </h3>
       </div>
