@@ -2,83 +2,92 @@ import React from 'react'
 
 
 import { Box,Text, Image, Checkbox} from '@chakra-ui/react'
+
 import Styles from "./Arrival.module.css"
+
 import { Select } from '@chakra-ui/react'
+import { useState } from 'react'
+import { useEffect } from 'react'
 
 function Arrival() {
+    let[data,setData]=useState([]);
+
+    const getData=async()=>{
+        let resp=await fetch(` http://localhost:8080/jewellery`);
+        let apiData=await resp.json();
+        setData(apiData)
+    }
+
+    useEffect(()=>{
+        getData()
+    },[])
+    console.log(data)
+
   return (
     <div>
           <div>
-            <Box>
-              <Image src='https://cdn.caratlane.com/media/static/images/V4/2022/CL/12-DEC/AppBanner/Newin/05/Desktop_1920-x560_toplisting.jpg' alt='Dan Abramov' />
+            <Box maxW='sm' borderWidth='1px' borderRadius='lg' overflow='hidden'>
+              <Image  boxSize='100%' src='https://cdn.caratlane.com/media/static/images/V4/2022/CL/12-DEC/AppBanner/Newin/05/Desktop_1920-x560_toplisting.jpg' alt='Dan Abramov' />
             </Box>
           </div>
-          <div className={Styles.filterContainer}>
-
-            <div className={Styles.filterbar}>
-            
-            </div>
-
-            <div>
-              <div>
-              <Select placeholder='Select option' className={Styles.selectData}>
-                <option value='option1'>Option 1</option>
-                <option value='option2'>Option 2</option>
-                <option value='option3'>Option 3</option>
-              </Select>
-              </div>
-            </div>
-          </div>
+         
 
           {/* sliding data */}
-          <Box className={Styles.marquee}>
+          {/* <Box className={Styles.marquee}>
             <marquee>
               <h2>15 Day Money Back </h2>
             </marquee>
-          </Box>
+          </Box> */}
           {/* data */}
 
           <div className={Styles.Data_container}>
             <div className={Styles.sidebar}>
-              <div><Text fontSize='2xl'>Filter By</Text></div>
-              <div className={Styles.filterByPrice}>
-                <div>
-                  <Text fontSize="2xl">Price</Text>
-                  <Checkbox border="gray">Rs 5000 - Rs 10000</Checkbox>
-                  <Checkbox border="gray">Rs 10001 - Rs 30000</Checkbox>
-                  <Checkbox border="gray">Rs 30001 - Rs 40000</Checkbox>
-                  <Checkbox border="gray">Rs 40001 - Rs 50000</Checkbox>
+              <div className={Styles.Filter}><Text fontSize='2xl'>Filter By</Text></div>
+                <div className={Styles.Priceheading}>Price</div>
+                <div className={Styles.priceData}>
+                  <p> &#8377; 5000- &#8377; 10000</p>
+                  <p> &#8377; 100001- &#8377; 20000</p>
+                  <p> &#8377; 200001- &#8377; 30000</p>
+                  <p> &#8377; 300001- &#8377; 40000</p>
+                  <p> &#8377; 400001- &#8377; 50000</p>
                 </div>
-              </div>
-              <div className={Styles.filterByPrice}>
-                <div>
-                  <Text fontSize="2xl">Product Type</Text>
-                  <Checkbox border="gray">Earrings</Checkbox>
-                  <Checkbox border="gray">Rings</Checkbox>
-                  <Checkbox border="gray">Necklaces</Checkbox>
+
+                <div className={Styles.Priceheading}>Product</div>
+                <div className={Styles.priceData}>
+                  <p> Rings</p>
+                  <p> Earrings</p>
+                  <p> Bracelets</p>
+                  <p> Solitaires</p>
+                  <p>Manglasutra</p>
+                  <p>Kids</p>
                 </div>
-              </div>
             </div>
             <div className={Styles.box}>
-              
-              <div className={Styles.card}>
-                <img src='https://cdn.caratlane.com/media/catalog/product/cache/6/image/480x480/9df78eab33525d08d6e5fb8d27136e95//J/S/JS01113-1YP900_11_listfront.jpg' alt='da'/>
-               
-                <div>
-                 <Text  className={Styles.price}> Rs:52532</Text>
-                 <Text  className={Styles.name}>Rings</Text>
-                </div>
-                <div>
-                  <div className={Styles.button_container}>
-                    <button>Add to cart</button>
-                    <button>Wish List</button>
-                  </div>
-                </div>
-              </div>
+                
+                {
+                    data.map((el)=>(
+                        <div className={Styles.card}>
+                        {/* <img src={el.image} alt='da'/> */}
+                        <Image src={el.image} alt="im" w="100%" />
+                        <div>
+                         <Text  className={Styles.price}> &#8377; : {el.price}</Text>
+                         <Text  className={Styles.name}>{el.name}</Text>
+                        </div>
+                        <div>
+                          <div className={Styles.button_container}>
+                            <button style={{color:"white"}}>Add to cart</button>
+                            <button style={{color:"white"}}>Wish List</button>
+                          </div>
+                        </div>
+                      </div>
+                    ))
+                }
+
+
             </div>
           </div>
 
-      {/* <AllRoutes/> */}
+     
     </div>
   )
 }
