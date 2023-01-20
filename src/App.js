@@ -19,13 +19,16 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      
+
+
+      {/* <Detail /> */}
       <AllRoutes />
-      {/* <Homepage />
-      <FreeTryAtHome />
-      <PlanOfPurchase />
-      <Detail />
-      <Footer />  */}
+      {/* <Arrival /> */}
+      {/* <Homepage /> */}
+      {/* <FreeTryAtHome /> */}
+
+      <Footer />
+
     </div>
   );
 }

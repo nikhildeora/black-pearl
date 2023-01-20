@@ -1,0 +1,51 @@
+.single__maindiv{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.single__image{
+    width: 100%;
+}
+
+.single__buttondiv{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+}
+
+.single__buttondiv button{
+    background: linear-gradient(to right,#fff6c8 0%,#ffd7f5 48%);
+    padding: 0.3rem 1rem;
+    margin: 0.4rem auto;
+    border-radius: 0.4rem;
+}
+
+
+.single__buttondiv button:hover{
+    background: linear-gradient(to right, rgb(222, 87, 229) 0%, rgb(136, 99, 251) 100%) 0px 0px / auto;
+}
+
+.single__pricetag{
+    font-size: 1.4rem;
+}
+
+.single__anchor{
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+}
+
+.single__name_heart{
+    display: flex;
+    width: 60%;
+    margin-left: 0.2rem;
+    flex-flow: row-reverse;
+    justify-content: space-between;
+}
+
+.single__wishlist{
+    color: red;
+}
