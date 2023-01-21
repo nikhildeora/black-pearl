@@ -1,0 +1,93 @@
+
+
+.mainContainer{
+    width: 100%;
+    margin-top: 10rem;
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.mainContainer h1{
+    font-size: 2.5rem;
+    font-family: serif;
+}
+.formContainer{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 5rem;
+    align-items: center;
+}
+form{
+    width: 100%;
+}
+.input_div{
+    text-align: left;
+}
+.input_div input{
+  border-color:  rgb(173, 169,173);
+  width: 100%;
+  height: 2rem;
+  border-radius: 0.4rem;
+  font-size: 1.1rem;
+  padding-left: 0.6rem;
+  background-color: white;
+  outline: none;
+  border: 1px solid rgb(222, 87, 229);
+}
+.input_div p{
+    color: rgb(79, 50, 103);
+    font-family: InterSemiBold, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.3rem;
+    
+    line-height: 14px;
+}
+
+form .button{
+    margin: auto;
+    margin-top: 2rem;
+    display: block;
+    width: 60%;
+    /* background: #8863fb; */
+    background: linear-gradient(to right,#de57e5,#8863fb);
+    /* padding: 10px 24px; */
+    min-height: 38px;
+    /* width: 24vw; */
+    text-align: center;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: 'MuliBold','Helvetica Neue',Helvetica,Arial,sans-serif;
+
+    text-decoration: none;
+    border: none;
+}
+
+@media screen and (max-width: 990px){
+    .mainContainer{
+        width: 100%;
+    }
+    .mainContainer h1{
+        font-size: 2.1rem;
+        font-family: serif;
+    }
+    .input_div p{
+       
+        font-size: 1.1rem;
+     
+    }
+}
+
+@media screen and (max-width: 660px){
+    .mainContainer{
+        width: 100%;
+    }
+    .mainContainer h1{
+        font-size: 1.8rem;
+        font-family: serif;
+    }
+}

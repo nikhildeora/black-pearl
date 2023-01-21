@@ -9,10 +9,13 @@
     
 }
 
-.banner__container>img{
+.desktopBanner1{
     position: relative;
     display: block;
     width: 100%;
+}
+.mobileBanner1{
+  display: none;
 }
 .text_container{
    position: absolute;
@@ -260,8 +263,11 @@ hr{
 .banner__container2{
     width: 100%;
 }
-.banner__container2 img{
+.banner2__desk{
     width: 100%;
+}
+.banner2__mob{
+  display: none;
 }
 .text_container2{
     position: absolute;
@@ -349,10 +355,11 @@ hr{
     border: none;
   }
   .Accordian {
+    margin-top: 4rem;
     text-align: left;
     display: flex;
     flex-direction: column;
-   
+    margin-bottom: 2rem;
 }
 .Accordian h1{
     font-family: serif;
@@ -365,11 +372,230 @@ hr{
     /* height: 2rem; */
     padding: 1rem;
     border: none;
-    border-bottom: 1px solid #333333;
+    border-bottom: 1px solid rgb(151, 151, 151);
     font-size: 1.4rem;
     padding-left: 2rem;
+    background-color: white;
 }
 .AccordianPanel{
     padding-left: 2rem;
     font-size: 1.2rem;
+}
+@media screen and (max-width:990px) {
+  .text_container > div{
+    width: 70%;
+  }
+.text_container > div > h1{
+
+  font-size: 1.6rem;
+  font-weight: 200;
+ 
+}
+
+.button__div button{
+  font-size: 1.2rem;
+}
+
+.button__div a{
+  font-size: 1.2rem;
+}
+.how_it_works{
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+.how_it_works__child{
+  width: 50%;
+} 
+.how_it_works__child h1{
+  font-size: 1.7rem;
+}
+.how_it_works__child2{
+ 
+  padding: 0 ;
+}
+
+.how_it_works__child2__inner img{
+  width: 6rem;
+}
+.how_it_works__child2__inner h2{
+  font-size: 1.1rem;
+}
+.how_it_works__child2__inner p{
+  font-size: 0.9rem;
+}
+.input__and__button{
+  width: 90%;
+}
+.input__and__button button{
+  font-size: 1rem;
+}
+.input__wrapper input{
+  padding: 0.3rem;
+  font-size: 1rem;
+}
+.chartImg img{
+  width: 150px;
+}
+.price h2{
+  font-size: 1.2rem;
+}
+.text_container2{
+ 
+  top: 290%;
+  left: 45%;
+  width: 80%;
+  text-align: center;
+  
+}
+.text_container2 >div >h1{
+  font-size: 1.6rem;
+  font-weight: 200;
+}
+.Accordian h1{
+ font-size: 1.7rem;
+}
+.AccordianBtn {
+  font-size: 1.2rem;
+}
+}
+@media screen and (max-width:660px){
+  .desktopBanner1{
+    display: none;
+  }
+  .mobileBanner1{
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+  .text_container{
+    top: 65%;
+    display: flex;
+    flex-direction: column;
+    /* top: 40%; */
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .text_container > div{
+    width: 100%;
+  }
+.text_container > div > h1{
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 200;
+ 
+}
+.button__div{
+  align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.button__div button{
+  width: 30%;
+  font-size: 1.2rem;
+}
+
+.button__div a{
+  font-size: 1.2rem;
+}
+.how_it_works{
+  padding: 1rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.how_it_works__child{
+  width: 100%;
+  margin-bottom: 3rem;
+} 
+.how_it_works__child h1{
+  font-size: 1.7rem;
+}
+.how_it_works__child2{
+ 
+  padding: 0 ;
+}
+.how_it_works__child2__inner{
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.how_it_works__child2__inner img{
+  width: 6rem;
+}
+.how_it_works__child2__inner h2{
+  font-size: 1.1rem;
+}
+.how_it_works__child2__inner p{
+  font-size: 0.9rem;
+}
+.input__and__button{
+  width: 90%;
+}
+.input__and__button button{
+  font-size: 1rem;
+}
+.input__wrapper input{
+  padding: 0.3rem;
+  font-size: 1rem;
+}
+.chartImg img{
+  width: 150px;
+}
+.price h2{
+  font-size: 1.2rem;
+}
+.banner2__desk{
+display: none;
+}
+.banner2__mob{
+  position: relative;
+  display: block;
+  width: 100%;
+}
+.text_container2{
+ 
+  top: 590%;
+  left: 55%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  /* top: 40%; */
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  
+}
+.text_container2 >div >h1{
+  font-size: 1.6rem;
+  font-weight: 200;
+}
+.text_container2 > div{
+  width: 100%;
+}
+.input__and__button{
+  width: 100%;
+}
+.input__and__button button{
+  font-size: 1rem;
+}
+.input__wrapper{
+  width: 100%;
+}
+.input__wrapper input{
+  padding: 0.3rem;
+  font-size: 1rem;
+  width: 100%;
+}
+.chartImg img{
+  width: 300px;
+}
+.Accordian h1{
+ font-size: 1.7rem;
+}
+.AccordianBtn {
+  font-size: 1.2rem;
+}
 }

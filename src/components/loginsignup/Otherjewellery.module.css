@@ -1,0 +1,100 @@
+
+
+
+.main{
+    margin-top: 10rem;
+}
+
+.imagediv{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-top: 2rem;
+   
+}
+.imagediv > img{
+    border-radius: 2rem;
+    width: 45%;
+    margin: auto;
+    cursor: pointer;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+ .imagediv > img:hover{
+    box-shadow:  rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.imagediv2{
+    display: grid;
+    width: 90%;
+    margin: auto;
+    margin-top: 4rem;
+    grid-template-columns: repeat(3,1fr);
+}
+.imagediv2 > img{
+    border-radius: 2rem;
+    width: 85%;
+    margin: auto;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+ .imagediv2 > img:hover{
+    box-shadow:  rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@media screen and (max-width: 990px) {
+
+    .imagediv{
+        /* display: flex; */
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+        margin-top: 2rem;
+       
+    }
+    .imagediv > img{
+        border-radius: 2rem;
+        width: 90%;
+        margin: auto;
+        margin-top: 3rem;
+       
+    }
+    .imagediv2{
+        display: grid;
+        width: 90%;
+        margin: auto;
+        margin-top: 4rem;
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+    .imagediv2 > img{
+        border-radius: 2rem;
+        width: 85%;
+        margin: auto;
+        margin-bottom: 2rem;
+        cursor: pointer;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+}
+   
+@media screen and (max-width: 560px) {
+    .imagediv{
+        /* display: flex; */
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+        margin-top: 2rem;
+       
+    }
+    .imagediv > img{
+        border-radius: 2rem;
+        width: 90%;
+        margin: auto;
+        margin-top: 1rem;
+        cursor: pointer;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+}
+
+
