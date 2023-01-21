@@ -12,19 +12,42 @@ import spriteImage1 from "../../assets/HomeImage/spriteImage2 (1).png";
 import spriteImage2 from "../../assets/HomeImage/spriteImage2 (2).png";
 import spriteImage3 from "../../assets/HomeImage/spriteImage2 (3).png";
 import spriteImage4 from "../../assets/HomeImage/spriteImage2 (4).png";
+import { useParams } from "react-router-dom";
 
 export default function Detail() {
   const [data, setData] = useState({});
-  console.log(data);
+  const { id } = useParams();
+
+
   useEffect(() => {
     async function getData() {
-      let res = await fetch("http://localhost:8080/jewellery/1");
+      let res = await fetch(`http://localhost:8080/jewellery/${id}`);
       let data = await res.json();
-      console.log(data);
       setData(data);
     }
     getData();
   }, []);
+
+  const addtocart = async () => {
+    let res = await fetch(`http://localhost:8080/cart`, {
+      method: "POST",
+      body: JSON.stringify({ ...data }),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
+  }
+
+  const addtowishlist = async () => {
+    let res = await fetch(`http://localhost:8080/wishlist`, {
+      method: "POST",
+      body: JSON.stringify({ ...data }),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
+  }
+
   return (
     <div>
       <div className={styles.containerDetails}>
@@ -36,10 +59,10 @@ export default function Detail() {
           <a href="#details">Product Details</a>
           <h3>₹ {data.price}</h3>
           <div className={styles.button}>
-            <button>
+            <button onClick={() => addtocart()}>
               <FaShoppingCart /> Add To Cart
             </button>
-            <button>
+            <button onClick={addtowishlist}>
               {" "}
               <FaRegHeart /> Add T0 WishList
             </button>

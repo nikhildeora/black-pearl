@@ -41,7 +41,10 @@
     justify-content: space-evenly;
 }
 
-
+.navbar__mainthirdpart a{
+    text-decoration: none;
+    color: black;
+}
 
 .Indiaflag{
     width: 1.4rem;
@@ -50,12 +53,22 @@
 
 .navbar__pagesroutes_link_div{
     color: #4a1a85;
-   font-size: 0.8rem;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   gap: 0.3rem;
-   cursor: pointer;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+    cursor: pointer;
+}
+
+.navbar__pagesroutes_link_div a{
+    color: #4a1a85;
+    text-decoration: none;
+}
+.navbar__pagesroutes_link_div a:hover{
+    color: black;
+    transition: 0.3s;
+    
 }
 
 .navbar__pagesroutes_link_div:hover{
@@ -119,11 +132,16 @@
     gap: 1rem;
 }
 
-.navbar__secondmenu>li>p{
+.navbar__secondmenu>li a{
+    text-decoration: none;
+    color: black ;
+}
+
+.navbar__secondmenu>li p{
     margin: 0px;
 }
 
-.navbar__secondmenu>li>p:hover{
+.navbar__secondmenu>li p:hover{
     color: rgb(222, 87, 229);
     text-decoration: underline;
     transition-duration: 0.3s;
@@ -221,7 +239,7 @@
        
     }
 
-    .navbar__secondmenu>li>p{
+    .navbar__secondmenu>li p{
         margin: 0px;
         width: 69%;
         text-align: start;

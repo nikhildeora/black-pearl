@@ -1,0 +1,254 @@
+*{
+    font-family: MuliRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.container{
+    margin-top: 5rem;
+}
+
+.banner__container>img{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.text_container{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    width: 70%;
+    text-align: center;
+    color: #fff;
+
+    transform: translateY(-50%);
+}
+.text_container p{
+    font-size: 18px;
+    line-height: 30px;
+}
+.text_container > div{
+    padding: 1rem;
+    padding-left: 5rem;
+    width: 50%;
+    text-align: left;
+}
+
+.text_container > div >h1{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 3rem;
+  font-weight: 200;
+}
+.button__div{
+    display: flex;
+   
+   gap: 2rem;
+}
+.button__div button{
+    height: 48px;
+    font-size: 1.8rem;
+}
+.button__play{
+    display: block;
+    background: linear-gradient(to right,#de57e5,#8863fb);
+    padding: 5px 5px;
+    width: 15vw;
+    text-align: center;
+   
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+.button__div a{
+    font-size: 1.4rem;
+    color: #ffffff;
+    /* font-family: 'MuliSemiBold','Helvetica Neue',Helvetica,Arial,sans-serif; */
+    display: inline-block;
+    position: relative;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+}
+
+.how_it_works{
+    display: flex;
+    text-align: left;
+    padding: 4rem;
+}
+.how_it_works__child{
+    flex: 2;
+}
+.how_it_works__child h1{
+    margin-bottom: 5rem;
+    font-family: serif;
+    font-size: 40px;
+    font-weight: 200;
+}
+.how_it_works__child p{
+    margin-top: 5rem;
+    color: #8863fb;
+}
+.how_it_works__child2{
+    flex: 1;
+    padding: 4rem ;
+}
+.how_it_works__child2__inner{
+    display: grid;
+    grid-template-columns: 30% 65%;
+    justify-content: space-between;
+    
+}
+.how_it_works__child2__inner img{
+    width: 120px;
+}
+.how_it_works__child2__inner h2{
+    font-weight: 400;
+}
+.how_it_works__child2__inner p{
+    font-weight: 200;
+    font-size: 1.1rem;
+}
+
+.unveringTest{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: #231535;
+    color: white;
+}
+.unveringTest h3{
+    font-size: 35px;
+}
+.logo{
+    width: 15rem;
+    height: 8rem;
+    margin-top: 5rem;
+}
+.safegold{
+    width: 30rem;
+    height: 10rem;
+    margin-top: 4rem;
+}
+.unveringTest p{
+    font-size: 15px;
+    padding-left: 10px;
+    line-height: 25px;
+    padding-bottom: 10px;
+}
+.redme{
+    background-color: #F9F9FA;
+}
+.redme h3{
+    padding-top: 20px;
+    color: gray;
+}
+.redemdata{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    
+}
+.redemdata h2{
+    font-size: 35px;
+    color: black;
+}
+.redemdata p{
+    color: gray;
+    margin: auto;
+}
+.redmeImgContainer{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    width: 90%;
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+   
+}
+.redmeImagearrow{
+    margin-top: 85px;
+    width: 80px;
+}
+.sectionimage{
+    background-color: #F9F9FA;
+}
+.formQuery{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+.formQuery label{
+    color: gray;
+}
+.formQuery input{
+    line-height: 38px;
+    margin-top: 15px;
+    border-radius: linear-gradient(to right, rgb(222, 87, 229), rgb(136, 99, 251));
+    border-radius: 5px;
+}
+.formQuery button{
+    line-height: 28px;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.formQueryData{
+   margin-left: 150px;
+    width: 70%;
+   margin: auto;
+}
+.queryConatainer{
+    display: grid;
+    grid-template-columns: 500px 400px 500px;
+    float: right;
+}
+.formQueryContainer{
+    flex-wrap: 3;
+}
+.requestBtn{
+    background-image: linear-gradient(to right, rgb(222, 87, 229), rgb(136, 99, 251));
+    padding: 9px 0px;
+    font-size: 20px;
+    color: white;
+    border: none;
+}
+.callImag{
+    width: 80px;
+    height: 80px;
+    margin-left: 125px;
+}
+.Accordian_options{
+   
+    flex: 1;
+    padding-top: 150px;
+   
+}
+.Accordian_options{
+    padding: 1rem;
+}
+.AccordianBtn{
+    margin-bottom: 1rem;
+    
+}
+.AccordianBtn h2{
+    font-size: 1.2rem;
+}
+.AccordianPanel{
+    text-align: left;
+    font-size: 1.1rem;
+}
+.accordianInput{
+    line-height: 35px;
+    font-size: 20px;
+    background-color: white;
+    color: rgb(104, 99, 99);
+}
+.accordianInputt{
+    border: none;
+    border-bottom: 1px solid rgb(104, 102, 102);
+}
+
+
+/* Media Query */
+
+@media screen and (max-width: 560px) {
+
+}
