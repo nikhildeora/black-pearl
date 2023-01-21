@@ -1,0 +1,58 @@
+
+.arrival__maindiv{
+    width: 93%;
+    gap: 3rem;
+    margin: auto;
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.arrival__sortdiv{
+    flex : 2;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding-bottom: 1.6rem;
+    height: fit-content;
+    border-radius: 1.4rem;
+}
+
+.arrival__sortdiv button{
+    width: 70%;
+    margin: auto;
+    display: block;
+    border: 1px solid rgb(222, 87, 229);
+    padding: 0.3rem 0rem;
+    margin: 0.4rem auto;
+    border-radius: 1rem;
+}
+.arrival__sortdiv button:hover{
+    background: linear-gradient(to right, rgb(222, 87, 229) 0%, rgb(136, 99, 251) 100%) 0px 0px / auto;
+}
+
+.arrival__datadiv{
+    flex: 7;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+
+.arrival__filterbytag{
+    background-color: #d8d5db;
+    padding: 1rem 0rem ;
+    margin-bottom: 0.6rem;
+    border-top-right-radius: 1.4rem;
+    border-top-left-radius: 1.4rem;
+}
+
+@media screen and (max-width:990px) {
+    .arrival__datadiv{
+        grid-template-columns: repeat(2,1fr);
+      
+    }
+}
+
+@media screen and (max-width:560px) {
+    .arrival__datadiv{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
