@@ -1,0 +1,112 @@
+.emptyWishlistMain {
+  margin-top: 9rem;
+  padding-bottom: 10rem;
+}
+
+.wishListDetails img {
+  width: 60%;
+}
+
+.emptyYourWishlist > h2 {
+  color: #231535;
+  font-family: "BegumRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2.4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.emptyYourWishlist > p {
+  font-size: 2.4rem;
+  color: #231535;
+  font-family: "BegumMedium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.wishlistMain {
+  margin-top: 9rem;
+  margin-bottom: 2rem;
+}
+
+.wishlistMain > h2 {
+  color: #231535;
+  font-family: MuliBold, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2.4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.single__maindiv {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.single__image {
+  width: 100%;
+}
+
+.wishListDetails {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.single__buttondiv {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.single__buttondiv button {
+  background: linear-gradient(to right, #fff6c8 0%, #ffd7f5 48%);
+  padding: 0.3rem 1rem;
+  margin: 0.4rem auto;
+  border-radius: 0.4rem;
+}
+
+.single__buttondiv button:hover {
+  background: linear-gradient(
+      to right,
+      rgb(222, 87, 229) 0%,
+      rgb(136, 99, 251) 100%
+    )
+    0px 0px / auto;
+}
+
+.single__pricetag {
+  font-size: 1.4rem;
+}
+
+.single__anchor {
+  border: 1px solid black;
+  text-decoration: none;
+  color: black;
+}
+
+.single__name_heart {
+  display: flex;
+  width: 60%;
+  margin-left: 0.2rem;
+  flex-flow: row-reverse;
+  justify-content: space-between;
+}
+
+.single__wishlist {
+  color: red;
+}
+
+@media screen and (max-width: 990px) {
+  .wishListDetails {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 560px) {
+  .wishListDetails {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .single__pricetag {
+    font-size: 1.2rem;
+  }
+  .single__nametag {
+    font-size: 0.8rem;
+  }
+}
