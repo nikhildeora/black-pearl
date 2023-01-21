@@ -30,7 +30,7 @@
     width: 2rem;
     margin: auto;
     margin-left: 0.5rem;
-   
+  
 }
 .registerbutton{
     background: linear-gradient(to right, rgb(222, 87, 229) 0%, rgb(136, 99, 251) 100%) 0px 0px / auto;
@@ -39,7 +39,8 @@
     border-radius:1rem ;
     color:white ;
     cursor: pointer;
-    
+    text-align: center;
+    border: none;
 }
 
 

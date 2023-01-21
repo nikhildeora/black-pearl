@@ -110,6 +110,7 @@ export default function Footer() {
                     </Flex>
                 </div>
             </div>
+          
 
             <div className={styles.footersec__maindiv}>
                 <p>Popular Searches</p>
