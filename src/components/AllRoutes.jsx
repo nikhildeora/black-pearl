@@ -8,6 +8,7 @@ import Login from './loginsignup/Login';
 import Signup from './loginsignup/Signup';
 import Arrival from './Arrival/Arrival';
 import PlanOfPurchase from './Plan/PlanOfPurchase';
+import Forgot from './Forgetpassword/Forgot';
 
 
 const AllRoutes = () => {
@@ -20,6 +21,7 @@ const AllRoutes = () => {
         <Route path='/newarrival/:category' element={<Arrival />} />
         <Route path='/product/:id' element={<Detail />} />
         <Route path='/plan' element={<PlanOfPurchase />} />
+        <Route path='/forget' element={<Forgot />} />
     </Routes>
   )
 }

@@ -3,9 +3,14 @@ import styles from "./navbar.module.css"
 import logo from "../../assets/logo.png"
 import Indiaflag from "../../assets/Indiaflag.png"
 import {Link as RouterLink, Router} from "react-router-dom"
+import { useContext } from 'react';
+import { AuthContext } from '../../context/AuthContext'
+
 
 const Navbar = () => {
     const [toggle, setToggle] = useState(false)
+    const {Logout, currentUser} = useContext(AuthContext)
+
     return (
 
         <div className={styles.navbar__outermain_div}>
@@ -40,8 +45,10 @@ const Navbar = () => {
 
 
                 <ul type="none" className={toggle ? `${styles.navbar__mainthirdpart} ${styles.navbar__showmenu}` : styles.navbar__mainthirdpart}>
-                    <li><RouterLink to={"/login"}><i className={`fa-solid fa-user ${styles.navbar__mainthirdpart_icon}`}></i>{" "}Login</RouterLink></li>
-                    <li><RouterLink to={"/signup"}><i className={`fa-solid fa-user ${styles.navbar__mainthirdpart_icon}`}></i>{" "}Singup</RouterLink></li>
+                   {currentUser===null ? <li><RouterLink to={"/login"}><i className={`fa-solid fa-user ${styles.navbar__mainthirdpart_icon}`}></i>{" "}Login</RouterLink></li> : currentUser.displayName===null ? "username" : currentUser.displayName }
+
+                  { currentUser === null ? <li><RouterLink to={"/signup"}><i className={`fa-solid fa-user ${styles.navbar__mainthirdpart_icon}`}></i>{" "}Singup</RouterLink></li> : <li onClick={Logout} style={{cursor:"pointer"}}><i className={`fa-solid fa-user ${styles.navbar__mainthirdpart_icon}`}></i>{" "}Logout</li> }
+
                     <li><i className={`fa-solid fa-heart ${styles.navbar__mainthirdpart_icon}`}></i></li>
                     <li><i className={`fa-solid fa-bag-shopping ${styles.navbar__mainthirdpart_icon}`}></i></li>
                 </ul>
