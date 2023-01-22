@@ -3,7 +3,7 @@ import styles from "./Digital.module.css"
 import { Image } from '@chakra-ui/react'
 import digitalBanner from "../../assets/DigitalPage/digitalBanner.jpg"
 
-import tanishqlogo from "../../assets/DigitalPage/tanishq.png";
+import tanishqlogo from "../../assets/DigitalPage/tanishque.png";
 import safegold from "../../assets/DigitalPage/safegold.png";
 import im3 from "../../assets/DigitalPage/3.png";
 import arrow from "../../assets/DigitalPage/arrow2.png";
@@ -29,7 +29,7 @@ function Digital() {
         <div className={styles.container}>
 
             <div className={styles.banner__container}>
-                <Image src={digitalBanner} alt='Dan Abramov' />
+                <Image src={digitalBanner} alt='digital banner' className={styles.digitalBanner}/>
                 <div className={styles.text_container}>
                     <div>
                         <h1>Here is an easier way of buying pure 24kt gold</h1>
@@ -49,7 +49,7 @@ function Digital() {
                         <button className={styles.button__play}>Buy DiGiGold</button>
 
                     </div>
-                    <p>You don’t have to wait till the 6th month to redeem. Refer to the calculator below to feel the joy sooner!</p>
+                    <h3>You don’t have to wait till the 6th month to redeem. Refer to the calculator below to feel the joy sooner!</h3>
                 </div>
                 <div className={styles.how_it_works__child2}>
                     <div className={styles.how_it_works__child2__inner}>
@@ -57,8 +57,8 @@ function Digital() {
                             <img src={im6} alt="" />
                         </div>
                         <div>
-                            <h2>Pay Monthly</h2>
-                            <p>Take easy, baby steps by choosing a fixed plan amount to keep aside with CARATLANE every month.</p>
+                            <h2>Unparalleled convenience</h2>
+                            <p>Buy in-store or online 24x7. Purchase gold online or offline through one of our partner jewellery stores.</p>
                         </div>
                     </div>
                     <div className={styles.how_it_works__child2__inner}>
@@ -66,8 +66,8 @@ function Digital() {
                             <img src={im5} alt="" />
                         </div>
                         <div>
-                            <h2>Our gift* to you</h2>
-                            <p>At the end of 6 months, CARATLANE will issue a gift* value equivalent to 30% of your first month’s plan amount.</p>
+                            <h2>What you buy is what you get</h2>
+                            <p>No carrying cost or hidden charges. Every gram of Tanishq DiGiGold you buy online is backed by real gold deposits worth the same.</p>
                         </div>
                     </div>
                     <div className={styles.how_it_works__child2__inner}>
@@ -75,8 +75,8 @@ function Digital() {
                             <img src={im7} alt="" />
                         </div>
                         <div>
-                            <h2>Purchase</h2>
-                            <p>You can redeem by purchasing jewellery of your choice, either at our stores or online.</p>
+                            <h2>100% guaranteed buyback</h2>
+                            <p>Redeem your Tanishq DiGiGold balance across our 450+ online stores and physical outlets—CaratLane, Mia, and Tanishq.</p>
                         </div>
                     </div>
 

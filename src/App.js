@@ -3,6 +3,7 @@
 import "./App.css";
 
 import AllRoutes from "./components/AllRoutes";
+import Digital from "./components/DigitalGold/Digital";
 
 import Footer from "./components/Footer/Footer";
 // import FreeTryAtHome from "./components/Freetry/FreeTryAtHome";
@@ -18,14 +19,15 @@ import Detail from "./components/SingleProduct/Detail";
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      {/* <Navbar /> */}
 
 
       {/* <Detail /> */}
-      <AllRoutes />
+      {/* <AllRoutes /> */}
       {/* <Arrival /> */}
       {/* <Homepage /> */}
       {/* <FreeTryAtHome /> */}
+      <Digital/>
 
       <Footer />
 
