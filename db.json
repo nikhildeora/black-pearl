@@ -543,23 +543,68 @@
   ],
   "cart": [
     {
-      "id": 4,
-      "image": "https://cdn.caratlane.com/media/catalog/product/cache/6/image/480x480/9df78eab33525d08d6e5fb8d27136e95//J/R/JR03673-PTP900_11_listfront.jpg",
-      "price": 31205,
-      "name": "Jack Platinum Ring for Men",
+      "id": 31,
+      "image": "https://cdn.caratlane.com/media/catalog/product/cache/6/image/480x480/9df78eab33525d08d6e5fb8d27136e95//S/R/SR03331-YGP900_11_listfront.jpg",
+      "price": 97685,
+      "name": "Prin Diamond Solitaire Ring ",
       "shipping": "Sold by BHFO",
       "star": 3,
+      "category": "solitaire"
+    },
+    {
+      "id": 41,
+      "image": "https://cdn.caratlane.com/media/catalog/product/cache/6/image/480x480/9df78eab33525d08d6e5fb8d27136e95//J/S/JS01113-1YP900_11_listfront.jpg",
+      "price": 23599,
+      "name": "Milda Infinity Diamond Mangalsutra ",
+      "shipping": "Sold by BHFO",
+      "star": 4,
+      "category": "mangalsutra"
+    },
+    {
+      "id": 42,
+      "image": "https://cdn.caratlane.com/media/catalog/product/cache/6/image/480x480/9df78eab33525d08d6e5fb8d27136e95//J/S/JS01071-1YP900_11_listfront.jpg",
+      "price": 59029,
+      "name": "Paavi Diamond Mangalsutra",
+      "shipping": "Sold by BHFO",
+      "star": 3,
+      "category": "mangalsutra"
+    },
+    {
+      "id": 43,
+      "image": "https://cdn.caratlane.com/media/catalog/product/cache/6/image/480x480/9df78eab33525d08d6e5fb8d27136e95//J/S/JS01094-1YP900_11_listfront.jpg",
+      "price": 24127,
+      "name": "Zuri Diamond Mangalsutra ",
+      "shipping": "Sold by BHFO",
+      "star": 5,
+      "category": "mangalsutra"
+    },
+    {
+      "id": 3,
+      "image": "https://cdn.caratlane.com/media/catalog/product/cache/6/image/480x480/9df78eab33525d08d6e5fb8d27136e95//J/R/JR07313-1YP6P0_11_listfront.jpg",
+      "price": 44612,
+      "name": "Muktya Dual Pearl Ring",
+      "shipping": "Sold by BHFO",
+      "star": 5,
       "category": "rings"
     }
   ],
   "wishlist": [
     {
-      "id": 4,
-      "image": "https://cdn.caratlane.com/media/catalog/product/cache/6/image/480x480/9df78eab33525d08d6e5fb8d27136e95//J/R/JR03673-PTP900_11_listfront.jpg",
-      "price": 31205,
-      "name": "Jack Platinum Ring for Men",
+      "id": 2,
+      "image": "https://cdn.caratlane.com/media/catalog/product/cache/6/image/480x480/9df78eab33525d08d6e5fb8d27136e95//J/R/JR07311-1YP6P0_11_listfront.jpg",
+      "price": 35176,
+      "name": "Mutyaa Pearl Ring",
       "shipping": "Sold by BHFO",
       "star": 3,
+      "category": "rings"
+    },
+    {
+      "id": 3,
+      "image": "https://cdn.caratlane.com/media/catalog/product/cache/6/image/480x480/9df78eab33525d08d6e5fb8d27136e95//J/R/JR07313-1YP6P0_11_listfront.jpg",
+      "price": 44612,
+      "name": "Muktya Dual Pearl Ring",
+      "shipping": "Sold by BHFO",
+      "star": 5,
       "category": "rings"
     }
   ]

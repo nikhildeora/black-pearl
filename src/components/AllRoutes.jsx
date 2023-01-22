@@ -9,7 +9,10 @@ import Signup from './loginsignup/Signup';
 import Arrival from './Arrival/Arrival';
 import PlanOfPurchase from './Plan/PlanOfPurchase';
 import Forgot from './Forgetpassword/Forgot';
-
+import Otherjewellery from './OtherJwellery/Otherjewellery';
+import Cart from "./Cart/Cart"
+import Wishlist from './Wishlist/Wishlist';
+import Digital from "./DigitalGold/Digital"
 
 const AllRoutes = () => {
   return (
@@ -22,6 +25,10 @@ const AllRoutes = () => {
         <Route path='/product/:id' element={<Detail />} />
         <Route path='/plan' element={<PlanOfPurchase />} />
         <Route path='/forget' element={<Forgot />} />
+        <Route path='/otherjwel' element={<Otherjewellery />} />
+        <Route path='/cart' element={<Cart />} />
+        <Route path='/wishlist' element={<Wishlist />} />
+        <Route path='/diggold' element={<Digital />} />
     </Routes>
   )
 }
