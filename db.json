@@ -543,14 +543,15 @@
   ],
   "cart": [
     {
-      "id": 51,
-      "image": "https://cdn.caratlane.com/media/catalog/product/cache/6/image/480x480/9df78eab33525d08d6e5fb8d27136e95//U/T/UT00816-YG0000_11_listfront.jpg",
-      "price": 14074,
-      "name": "Om Baby Nazaria Gold Bracelet Set of 2 ",
+      "id": 1,
+      "image": "https://cdn.caratlane.com/media/catalog/product/cache/6/image/480x480/9df78eab33525d08d6e5fb8d27136e95//J/R/JR03126-WGP900_11_listfront.jpg",
+      "price": 61481,
+      "name": "Emma Flora Diamond Ring",
       "shipping": "Sold by BHFO",
-      "star": 3,
-      "category": "kids"
+      "star": 4,
+      "category": "rings"
     },
+      
     {
       "id": 52,
       "image": "https://cdn.caratlane.com/media/catalog/product/cache/6/image/480x480/9df78eab33525d08d6e5fb8d27136e95//U/E/UE04855-1Y0000_11_listfront.jpg",
