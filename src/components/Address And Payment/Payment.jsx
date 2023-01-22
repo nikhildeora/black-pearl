@@ -1,40 +1,56 @@
-import { async } from "@firebase/util";
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import styles from "./Payment.module.css";
 import { useNavigate } from "react-router-dom";
 
-
 const Payment = () => {
-  const [cardNumber, setCardNumber] = useState("");
-  const [expirationDate, setExpirationDate] = useState("");
-  const [cvv, setCvv] = useState("");
-  const [amount, setAmount] = useState("");
+  const nameRef = useRef(null);
+  const cardRef = useRef(null);
+  const monthRef = useRef(null);
+  const yearRef = useRef(null);
+  const cvvRef = useRef(null);
   const navigate = useNavigate();
 
   const addressObj = JSON.parse(localStorage.getItem("addreddObj"));
+  // const totalAmount = localStorage.getItem("totalAmount");
   //   console.log(addressObj.fullName);
 
-const emptycart =  (buttype) => {
-  if(buttype==="pay"){
-     
-  }
-
-
-   fetch(`http://localhost:8080/cart`)
-   .then((res)=>res.json())
-   .then((res)=>{
-     for(let i=0;i<res.length;i++){
-        let id = res[i].id;
-        fetch(`http://localhost:8080/cart/${id}`,{
-          method : "DELETE"
-        })
+  const emptycart = (buttype) => {
+    if (buttype === "pay") {
+      if (
+        nameRef.current.value == "" ||
+        cardRef.current.value == "" ||
+        monthRef.current.value == "" ||
+        yearRef.current.value == "" ||
+        cvvRef.current.value == ""
+      ) {
+        // console.log(addressObj);
+        alert("Please fill all the filds");
+        return;
+      } else if (String(cardRef.current.value).length != 16) {
+        alert("Please check the card number");
+        return;
+      } else if (String(cvvRef.current.value).length != 3) {
+        alert("Check your CVV");
+        return;
       }
-   }).then(()=> { 
-    alert("Hurray! your order is placed"); 
-    navigate("/");
-  })
-   .catch((err)=>console.log(err))
-}
+    }
+
+    fetch(`http://localhost:8080/cart`)
+      .then((res) => res.json())
+      .then((res) => {
+        for (let i = 0; i < res.length; i++) {
+          let id = res[i].id;
+          fetch(`http://localhost:8080/cart/${id}`, {
+            method: "DELETE",
+          });
+        }
+      })
+      .then(() => {
+        alert("Hurray! your order is placed");
+        navigate("/");
+      })
+      .catch((err) => console.log(err));
+  };
 
   const handleSubmit = async (event) => {
     console.log("hi");
@@ -45,23 +61,24 @@ const emptycart =  (buttype) => {
         <p>Hi {addressObj?.fullName}</p>
         <p>Your Product will be delivered to</p>
         <p>{addressObj?.address}</p>
-        <p style={{ color: "red" }}>Thank you for Shopping with us</p>
+        <p style={{ color: "green" }}>Thank you for Shopping with us</p>
       </div>
 
       <div className={styles.cardaPymentNew}>
-        <button  onClick={()=>emptycart("cod")}>Cash On Delivery?</button>
+        {/* <h2>{totalAmount}</h2> */}
+        <button onClick={() => emptycart("cod")}>Cash On Delivery?</button>
         <h2>Online Payment</h2>
         <div className={styles.cardPaymentInputs}>
           <p>Name on the card</p>
-          <input type="text" />
+          <input type="text" ref={nameRef} />
           <p>Card Number</p>
           <input
+            ref={cardRef}
             type="number"
-            maxlength="16"
             placeholder="Enter your card number"
           />
           <p style={{ margin: "1rem 0" }}>Expire </p>
-          <select>
+          <select ref={monthRef}>
             <option value="">Month</option>
             <option value="1">January - 01</option>
             <option value="2">February - 02</option>
@@ -76,7 +93,7 @@ const emptycart =  (buttype) => {
             <option value="11">November - 11</option>
             <option value="12">December - 12</option>
           </select>
-          <select>
+          <select ref={yearRef}>
             <option value="">Year</option>
             <option value="2023">2023</option>
             <option value="2204">2024</option>
@@ -88,9 +105,9 @@ const emptycart =  (buttype) => {
             <option value="2030">2030</option>
           </select>
           <p>CVV</p>
-          <input type="tel" maxLength={3} placeholder="***" />
+          <input ref={cvvRef} type="number" placeholder="***" />
         </div>
-        <button onClick={()=>emptycart("pay")}>Pay</button>
+        <button onClick={() => emptycart("pay")}>Pay</button>
       </div>
     </div>
   );

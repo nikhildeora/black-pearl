@@ -38,8 +38,11 @@ import insta4 from "../../assets/HomeImage/insta4.jpg";
 import insta5 from "../../assets/HomeImage/insta5.jpg";
 import insta6 from "../../assets/HomeImage/insta6.jpg";
 import insta7 from "../../assets/HomeImage/insta7.jpg";
+import { useNavigate } from "react-router";
 
 const Homepage = () => {
+  const navRing = () => {};
+  const navigate = useNavigate();
   return (
     <div className={styles.firstSwiper} style={{ marginTop: "7rem" }}>
       <Swiper
@@ -51,7 +54,7 @@ const Homepage = () => {
         }}
         navigation={true}
         modules={[Pagination, Navigation]}
-        className='mySwiper'
+        className="mySwiper"
       >
         <SwiperSlide className={styles.swiper}>
           <img src={slider1} alt="slider1" />
@@ -76,27 +79,60 @@ const Homepage = () => {
           </div>
         </div>
         <div className={styles.category6}>
-          <img src={dropEarRings} alt="dropEarRings" />
-          <img src={modernMangalSutra} alt="modernMangalSutra" />
-          <img src={giftsUnder20k} alt="giftsUnder20k" />
-          <img src={engagementRings} alt="engagementRings" />
-          <img src={stunningBangles} alt="stunningBangles" />
-          <img src={mensRing} alt="mensRing" />
+          <img
+            src={dropEarRings}
+            onClick={() => {
+              navigate("/newarrival/earrings");
+            }}
+            alt="dropEarRings"
+          />
+          <img
+            src={modernMangalSutra}
+            onClick={() => {
+              navigate("/newarrival/mangalsutra");
+            }}
+            alt="modernMangalSutra"
+          />
+          <img
+            src={giftsUnder20k}
+            onClick={() => {
+              navigate("/newarrival/all");
+            }}
+            alt="giftsUnder20k"
+          />
+          <img
+            src={engagementRings}
+            onClick={() => {
+              navigate("/newarrival/rings");
+            }}
+            alt="engagementRings"
+          />
+          <img
+            src={stunningBangles}
+            onClick={() => {
+              navigate("/newarrival/bracelet");
+            }}
+            alt="stunningBangles"
+          />
+          <img
+            src={mensRing}
+            onClick={() => {
+              navigate("/newarrival/solitaire");
+            }}
+            alt="mensRing"
+          />
         </div>
-
-
 
         <div className={styles.collection}>
           <img src={barlaCollection} alt="" />
-            <img src={mograCollection} alt="mograCollection" />
-          
+          <img src={mograCollection} alt="mograCollection" />
+
           <img src={harmonyCollection} alt="" />
         </div>
-        
-            <div className={styles.button}>
-              <button>View all Collection</button>
-            </div>
-         
+
+        <div className={styles.button}>
+          <button>View all Collection</button>
+        </div>
 
         <div className={styles.milestone}>
           <img src={markMilestoneLeft} alt="" />
@@ -237,13 +273,23 @@ const Homepage = () => {
             <img src={insta1} alt="" />
             <div className={styles.instaSmall}>
               <div>
-              <img src={insta2} alt="" />
+                <img src={insta2} alt="" />
               </div>
-              <div><img src={insta3} alt="" /></div>
-              <div><img src={insta4} alt="" /></div>
-              <div><img src={insta5} alt="" /></div>
-              <div><img src={insta6} alt="" /></div>
-              <div><img src={insta7} alt="" /></div>
+              <div>
+                <img src={insta3} alt="" />
+              </div>
+              <div>
+                <img src={insta4} alt="" />
+              </div>
+              <div>
+                <img src={insta5} alt="" />
+              </div>
+              <div>
+                <img src={insta6} alt="" />
+              </div>
+              <div>
+                <img src={insta7} alt="" />
+              </div>
             </div>
           </div>
         </div>

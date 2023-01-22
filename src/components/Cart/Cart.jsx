@@ -2,8 +2,7 @@ import React from "react";
 import styles from "./Cart.module.css";
 import wishlist from "../../assets/wishlist.png";
 import { useEffect, useState } from "react";
-import {Link as RouterLink} from "react-router-dom"
-
+import { Link as RouterLink } from "react-router-dom";
 
 const Cart = () => {
   const [status, setStatus] = useState(false);
@@ -19,8 +18,8 @@ const Cart = () => {
 
   function getTotal(data) {
     let totalam = 0;
-    for(let i=0;i<data.length;i++){
-       totalam += data[i].price
+    for (let i = 0; i < data.length; i++) {
+      totalam += data[i].price;
     }
     setTotal(totalam);
   }
@@ -32,7 +31,6 @@ const Cart = () => {
       setDatas(data1);
       await getTotal(data1);
     }
-    
 
     getWishList();
   }, [status]);
@@ -72,7 +70,10 @@ const Cart = () => {
         ))}
       </div>
       <div className={styles.single__buttondiv}>
-        <RouterLink to={"/address"}> <button>Proced to Checkout</button></RouterLink>
+        <RouterLink to={"/address"}>
+          {" "}
+          <button>Proced to Checkout</button>
+        </RouterLink>
       </div>
     </div>
   );
