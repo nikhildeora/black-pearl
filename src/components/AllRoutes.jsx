@@ -13,6 +13,9 @@ import Otherjewellery from './OtherJwellery/Otherjewellery';
 import Cart from "./Cart/Cart"
 import Wishlist from './Wishlist/Wishlist';
 import Digital from "./DigitalGold/Digital"
+import Address from "./Address And Payment/Address"
+import Payment from "./Address And Payment/Payment"
+
 
 const AllRoutes = () => {
   return (
@@ -29,6 +32,8 @@ const AllRoutes = () => {
         <Route path='/cart' element={<Cart />} />
         <Route path='/wishlist' element={<Wishlist />} />
         <Route path='/diggold' element={<Digital />} />
+        <Route path='/address' element={<Address />} />
+        <Route path='/payment' element={<Payment />} />
     </Routes>
   )
 }

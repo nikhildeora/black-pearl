@@ -1,13 +1,40 @@
+import { async } from "@firebase/util";
 import React, { useState } from "react";
 import styles from "./Payment.module.css";
+import { useNavigate } from "react-router-dom";
+
+
 const Payment = () => {
   const [cardNumber, setCardNumber] = useState("");
   const [expirationDate, setExpirationDate] = useState("");
   const [cvv, setCvv] = useState("");
   const [amount, setAmount] = useState("");
+  const navigate = useNavigate();
 
   const addressObj = JSON.parse(localStorage.getItem("addreddObj"));
   //   console.log(addressObj.fullName);
+
+const emptycart =  (buttype) => {
+  if(buttype==="pay"){
+     
+  }
+
+
+   fetch(`http://localhost:8080/cart`)
+   .then((res)=>res.json())
+   .then((res)=>{
+     for(let i=0;i<res.length;i++){
+        let id = res[i].id;
+        fetch(`http://localhost:8080/cart/${id}`,{
+          method : "DELETE"
+        })
+      }
+   }).then(()=> { 
+    alert("Hurray! your order is placed"); 
+    navigate("/");
+  })
+   .catch((err)=>console.log(err))
+}
 
   const handleSubmit = async (event) => {
     console.log("hi");
@@ -15,14 +42,14 @@ const Payment = () => {
   return (
     <div className={styles.mainPayment}>
       <div className={styles.mainPaymentInputs}>
-        <p>Hi {addressObj.fullName}</p>
+        <p>Hi {addressObj?.fullName}</p>
         <p>Your Product will be delivered to</p>
-        <p>{addressObj.address}</p>
+        <p>{addressObj?.address}</p>
         <p style={{ color: "red" }}>Thank you for Shopping with us</p>
       </div>
 
       <div className={styles.cardaPymentNew}>
-        <button>Cash On Delivery?</button>
+        <button  onClick={()=>emptycart("cod")}>Cash On Delivery?</button>
         <h2>Online Payment</h2>
         <div className={styles.cardPaymentInputs}>
           <p>Name on the card</p>
@@ -63,7 +90,7 @@ const Payment = () => {
           <p>CVV</p>
           <input type="tel" maxLength={3} placeholder="***" />
         </div>
-        <button>Pay</button>
+        <button onClick={()=>emptycart("pay")}>Pay</button>
       </div>
     </div>
   );
