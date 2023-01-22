@@ -1,6 +1,6 @@
 import React from 'react'
 import {Route,Routes} from "react-router-dom"
-
+import PrivateRoute from './PrivateRoute';
 import FreeTryAtHome from './Freetry/FreeTryAtHome';
 import Homepage from './Homepage/Homepage';
 import Detail from './SingleProduct/Detail';
@@ -15,6 +15,7 @@ import Wishlist from './Wishlist/Wishlist';
 import Digital from "./DigitalGold/Digital"
 import Address from "./Address And Payment/Address"
 import Payment from "./Address And Payment/Payment"
+import AdminAuth from '../AdminAuth/AdminAuth';
 
 
 const AllRoutes = () => {
@@ -32,8 +33,17 @@ const AllRoutes = () => {
         <Route path='/cart' element={<Cart />} />
         <Route path='/wishlist' element={<Wishlist />} />
         <Route path='/diggold' element={<Digital />} />
-        <Route path='/address' element={<Address />} />
-        <Route path='/payment' element={<Payment />} />
+        <Route path='/admin' element={<AdminAuth />} />
+        <Route path='/address' element={
+        <PrivateRoute>
+        <Address />
+        </PrivateRoute>
+        } />
+        <Route path='/payment' element={
+        <PrivateRoute>
+        <Payment />
+        </PrivateRoute>
+        } />
     </Routes>
   )
 }

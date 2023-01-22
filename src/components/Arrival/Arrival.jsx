@@ -20,6 +20,7 @@ function Arrival() {
   const [heroimg, setHeroimg] = useState("")
  const [pselect,setPselect] = useState(1)
 const [categ,setCateg] = useState("all")
+const [sortToggle , setSortToggle] = useState(false)
 
 
 
@@ -122,7 +123,8 @@ async function changeCateg(switchcateg){
 
 
       <div className={Styles.arrival__maindiv} >
-        <div className={Styles.arrival__sortdiv}>
+         <button onClick={()=>setSortToggle(!sortToggle)} className={Styles.arrival__filteroption}>Filter Options</button>
+        <div className={sortToggle ? `${Styles.arrival__sortdiv} ${Styles.showarrival_sort}` : Styles.arrival__sortdiv}>
            <p className={Styles.arrival__filterbytag}>Filter By</p>
            <div>
             <h2>Price</h2>
@@ -143,6 +145,8 @@ async function changeCateg(switchcateg){
             <button style={categ==="kids" ? {background: 'linear-gradient(to right,#fff6c8 0%,#ffd7f5 48%)'} : null} onClick={()=>changeCateg("kids")}>Kids</button>
            </div>
         </div>
+
+
         <div className={Styles.arrival__datadiv}>
            {data?.map((el)=>(
             <SingleProduct key={el.id} {...el} />

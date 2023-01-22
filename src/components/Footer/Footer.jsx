@@ -20,6 +20,7 @@ import insta from "../../assets/insta.png"
 import linkedin from "../../assets/linkedin.png"
 import pintrest from "../../assets/pintrest.png"
 import twitter from "../../assets/twitter.png"
+import {Link as RouterLink} from "react-router-dom"
 
 export default function Footer() {
     return (
@@ -30,31 +31,31 @@ export default function Footer() {
                     <div className={styles.footer__grid}>
                         <Stack align={'flex-start'}>
                             <Text>Know Your Jewellery</Text>
-                            <Link className={styles.footer__links} href={'#'}>DIAMOND GUIDE</Link>
-                            <Link className={styles.footer__links} href={'#'}>JEWELLERY GUIDE</Link>
-                            <Link className={styles.footer__links} href={'#'}>GEMSTONES GUIDE</Link>
-                            <Link className={styles.footer__links} href={'#'}>GOLD RATE</Link>
-                            <Link className={styles.footer__links} href={'#'}>DIGITAL GOLD</Link>
+                            <RouterLink className={styles.footer__links} to={'/newarrival/all'}>DIAMOND GUIDE</RouterLink>
+                            <RouterLink className={styles.footer__links} to={'/newarrival/all'}>JEWELLERY GUIDE</RouterLink>
+                            <RouterLink className={styles.footer__links} to={'/newarrival/all'}>GEMSTONES GUIDE</RouterLink>
+                            <RouterLink className={styles.footer__links} to={'/newarrival/all'}>GOLD RATE</RouterLink>
+                            <RouterLink className={styles.footer__links} to={'/newarrival/all'}>DIGITAL GOLD</RouterLink>
                         </Stack>
                         <Stack align={'flex-start'}>
                             <Text>Black Pearl Advantage</Text>
-                            <Link className={styles.footer__links} href={'#'}>15-DAY RETURNS</Link>
-                            <Link className={styles.footer__links} href={'#'}>FREE SHIPPING</Link>
-                            <Link className={styles.footer__links} href={'#'}>FINANCING OPTIONS</Link>
-                            <Link className={styles.footer__links} href={'#'}>OLD GOLD EXCHANGE</Link>
+                            <RouterLink className={styles.footer__links} to={'/'}>15-DAY RETURNS</RouterLink>
+                            <RouterLink className={styles.footer__links} to={'/'}>FREE SHIPPING</RouterLink>
+                            <RouterLink className={styles.footer__links} to={'/'}>FINANCING OPTIONS</RouterLink>
+                            <RouterLink className={styles.footer__links} to={'/'}>OLD GOLD EXCHANGE</RouterLink>
                         </Stack>
                         <Stack align={'flex-start'}>
                             <Text>Customer Service</Text>
-                            <Link className={styles.footer__links} href={'#'}>RETURN POLICY</Link>
-                            <Link className={styles.footer__links} href={'#'}>ORDER STATUS</Link>
+                            <RouterLink className={styles.footer__links} to={'/'}>RETURN POLICY</RouterLink>
+                            <RouterLink className={styles.footer__links} to={'/'}>ORDER STATUS</RouterLink>
 
                         </Stack>
                         <Stack align={'flex-start'}>
                             <Text>About Us</Text>
-                            <Link className={styles.footer__links} href={'#'}>OUR STORY</Link>
-                            <Link className={styles.footer__links} href={'#'}>PRESS</Link>
-                            <Link className={styles.footer__links} href={'#'}>BLOG</Link>
-                            <Link className={styles.footer__links} href={'#'}>CAREERS</Link>
+                            <RouterLink className={styles.footer__links} to={'/'}>OUR STORY</RouterLink>
+                            <RouterLink className={styles.footer__links} to={'/'}>PRESS</RouterLink>
+                            <RouterLink className={styles.footer__links} to={'/'}>BLOG</RouterLink>
+                            <RouterLink className={styles.footer__links} to={'/'}>CAREERS</RouterLink>
 
                         </Stack>
                         <Stack align={'flex-start'}>
@@ -114,36 +115,36 @@ export default function Footer() {
 
             <div className={styles.footersec__maindiv}>
                 <p>Popular Searches</p>
-                <h4>Pendants</h4>
+                <RouterLink to={"/newarrival/mangalsutra"} style={{textDecoration:"none"}}> <h4>Pendants</h4>
                 <p> <span>Gold Pendant</span> | <span>Diamond Pendant</span> | <span>Solitaire Pendant</span> | <span>Gemstone Pendant</span> | <span>22KT Pendants</span>
-                </p>
+                </p></RouterLink>
                 <hr />
-                <h4>Nose Pin</h4>
-                <p> <span>Nose Ring</span> | <span>Gold Nose Pin</span> | <span>Diamond Nose Pin</span> </p>
+                <RouterLink to={"/newarrival/earrings"} style={{textDecoration:"none"}}> <h4>Nose Pin</h4>
+                <p> <span>Nose Ring</span> | <span>Gold Nose Pin</span> | <span>Diamond Nose Pin</span> </p></RouterLink>
+                <hr /> 
+                <RouterLink to={"/newarrival/mangalsutra"} style={{textDecoration:"none"}}> <h4>Chain</h4>
+                <p> <span>Gold Chain</span> | <span>22kt Chains</span> | <span>Platinum Chains</span></p></RouterLink>
                 <hr />
-                <h4>Chain</h4>
-                <p> <span>Gold Chain</span> | <span>22kt Chains</span> | <span>Platinum Chains</span></p>
+                <RouterLink to={"/newarrival/bracelet"} style={{textDecoration:"none"}}> <h4>Bangles</h4>
+                <p> <span> Gold Bangles</span> | <span>Diamond Bangles</span> | <span>Gemstone Bangles</span> | <span>22kt Bangles</span></p> </RouterLink>
                 <hr />
-                <h4>Bangles</h4>
-                <p> <span> Gold Bangles</span> | <span>Diamond Bangles</span> | <span>Gemstone Bangles</span> | <span>22kt Bangles</span></p>
-                <hr />
-                <h4>Bracelet</h4>
+                <RouterLink to={"/newarrival/bracelet"} style={{textDecoration:"none"}}> <h4>Bracelet</h4>
                 <p>
                     <span> Gold Bracelet</span> | <span>Diamond Bracelet</span> | <span>Kids Bracelets</span> | <span>Solitaire Bracelets</span> | <span>Pearl Bracelet</span> | <span>22kt Bracelets</span> 
-                </p>
+                </p> </RouterLink>
                 <hr />
-                <h4>Necklace</h4>
-                <p><span> Gold Necklace</span> | <span>Diamond Necklace</span> | <span>Gemstone Necklace</span> | <span>Kids Necklace</span> | <span>Ruby Necklace</span></p>
+                <RouterLink to={"/newarrival/mangalsutra"} style={{textDecoration:"none"}}><h4>Necklace</h4>
+                <p><span> Gold Necklace</span> | <span>Diamond Necklace</span> | <span>Gemstone Necklace</span> | <span>Kids Necklace</span> | <span>Ruby Necklace</span></p></RouterLink> 
                 <hr />
-                <h4>Rings</h4>
-                <p><span>Gold Rings</span> | <span>Diamond Rings</span> | <span>Platinum Rings</span> |<span>Solitaire Rings</span> | <span>Gemstone Rings</span> | <span>Mens Rings</span> | <span>Ruby Ring</span></p>
+                <RouterLink to={"/newarrival/rings"} style={{textDecoration:"none"}}> <h4>Rings</h4>
+                <p><span>Gold Rings</span> | <span>Diamond Rings</span> | <span>Platinum Rings</span> |<span>Solitaire Rings</span> | <span>Gemstone Rings</span> | <span>Mens Rings</span> | <span>Ruby Ring</span></p> </RouterLink> 
                 <hr />
-                <h4>Earrings</h4>
-                <p><span> Gold Earrings</span> | <span>Diamond Earrings</span> | <span>Gemstone Bracelets</span> | <span>Solitaire Earrings</span> |  <span>Platinum Earrings</span> | <span>22kt Earrings</span> </p>
+                <RouterLink to={"/newarrival/earrings"} style={{textDecoration:"none"}}> <h4>Earrings</h4>
+                <p><span> Gold Earrings</span> | <span>Diamond Earrings</span> | <span>Gemstone Bracelets</span> | <span>Solitaire Earrings</span> |  <span>Platinum Earrings</span> | <span>22kt Earrings</span> </p> </RouterLink>
                 <hr />
-                <h4>Jewellery</h4>
+                <RouterLink to={"/newarrival/all"} style={{textDecoration:"none"}}><h4>Jewellery</h4>
                 <p><span> Gold</span> | <span>Diamond</span> |  <span>Gemstone</span> |                
-                 <span>Solitaire</span> |   <span>Platinum </span> | <span>22kt Jewellery</span> </p>
+                 <span>Solitaire</span> |   <span>Platinum </span> | <span>22kt Jewellery</span> </p></RouterLink> 
                 <hr />
 
                 <div className={styles.footersec__copyright}>

@@ -1,5 +1,7 @@
 import React from 'react'
 import styles from './AdminAuth.module.css'
+
+
  const AdminAuth = () => {
   return (
     <div>
