@@ -7,7 +7,6 @@ const Cart = () => {
   const [status, setStatus] = useState(false);
   const [datas, setDatas] = useState([]);
   const [total, setTotal] = useState(0);
-  console.log(datas);
 
   const deleteWishlist = async (id) => {
     let res = await fetch(`http://localhost:8080/cart/${id}`, {
@@ -16,8 +15,12 @@ const Cart = () => {
     setStatus(!status);
   };
 
-  function getTotal() {
-    datas.map((data) => setTotal(total + Number(data.price)));
+  function getTotal(data) {
+    let totalam = 0;
+    for(let i=0;i<data.length;i++){
+       totalam += data[i].price
+    }
+    setTotal(totalam);
   }
 
   useEffect(() => {
@@ -25,15 +28,11 @@ const Cart = () => {
       let res = await fetch("http://localhost:8080/cart");
       let data1 = await res.json();
       setDatas(data1);
-      let total = await data1.reduce((total, num) => {
-        return total + num;
-      }, 0);
-      console.log("total", total);
+      await getTotal(data1);
     }
-    // numbers.reduce(getSum, 0);
+    
 
     getWishList();
-    getTotal();
   }, [status]);
 
   if (datas.length === 0) {
@@ -53,6 +52,7 @@ const Cart = () => {
   return (
     <div className={styles.wishlistMain}>
       <h2>Your Cart</h2>
+      <h3 className={styles.cart__totaltext}>Total amount : {total}</h3>
       <div className={styles.wishListDetails}>
         {datas.map((data) => (
           <div key={data.id} className={styles.single__maindiv}>
@@ -69,7 +69,6 @@ const Cart = () => {
           </div>
         ))}
       </div>
-      <p>{total}</p>
       <div className={styles.single__buttondiv}>
         <button>Proced to Checkout</button>
       </div>

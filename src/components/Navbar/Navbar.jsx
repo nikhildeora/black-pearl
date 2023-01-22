@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import styles from "./navbar.module.css"
 import logo from "../../assets/logo.png"
-import Indiaflag from "../../assets/Indiaflag.png"
-import {Link as RouterLink, Router} from "react-router-dom"
+import {Link as RouterLink} from "react-router-dom"
 import { useContext } from 'react';
 import { AuthContext } from '../../context/AuthContext'
 
@@ -34,7 +33,7 @@ const Navbar = () => {
                     </li>
                     <li className={styles.navbar__pagesroutes_link_div}>
                         <i className={`uil uil-gold ${styles.navbar__top_icons}`}></i>
-                        BUY DIGITAL GOLD
+                        <RouterLink to={"/diggold"}> BUY DIGITAL GOLD </RouterLink>
                     </li>
                     <li className={styles.navbar__pagesroutes_link_div_search}>
                         <input className={styles.navbar__searchbar} type="text" placeholder='Search' />
@@ -49,8 +48,8 @@ const Navbar = () => {
 
                   { currentUser === null ? <li><RouterLink to={"/signup"}><i className={`fa-solid fa-user ${styles.navbar__mainthirdpart_icon}`}></i>{" "}Singup</RouterLink></li> : <li onClick={Logout} style={{cursor:"pointer"}}><i className={`fa-solid fa-user ${styles.navbar__mainthirdpart_icon}`}></i>{" "}Logout</li> }
 
-                    <li><i className={`fa-solid fa-heart ${styles.navbar__mainthirdpart_icon}`}></i></li>
-                    <li><i className={`fa-solid fa-bag-shopping ${styles.navbar__mainthirdpart_icon}`}></i></li>
+                    <li><RouterLink to={"/wishlist"}> <i className={`fa-solid fa-heart ${styles.navbar__mainthirdpart_icon}`}></i></RouterLink></li>
+                    <li><RouterLink to={"/cart"}> <i className={`fa-solid fa-bag-shopping ${styles.navbar__mainthirdpart_icon}`}></i></RouterLink></li>
                 </ul>
             </div>
 
@@ -82,7 +81,7 @@ const Navbar = () => {
                         <p>  <RouterLink to={"/newarrival/kids"}>  KIDS  </RouterLink></p></li>
                     <li>
                         <img className={styles.navbar__secondmenu_image} src="	https://banner.caratlane.com/live-images/796094b0bfd6480d99862d0b1b3b6df6.jpg" alt="navbarimage" />
-                        <p> <RouterLink to={"/newarrival/all"}>   OTHER JEWELLERY  </RouterLink></p></li>
+                        <p> <RouterLink to={"/otherjwel"}>   OTHER JEWELLERY  </RouterLink></p></li>
                     <li>
                         <img className={styles.navbar__secondmenu_image} src="https://banner.caratlane.com/live-images/26fa8578bcd943c283875444feff3603.jpg" alt="navbarimage" />
                         <p><RouterLink to={"/newarrival/gifts"}>  GIFTING  </RouterLink></p></li>
