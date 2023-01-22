@@ -1,14 +1,66 @@
 
 
-
-import React from 'react'
+import React, { useRef, useState, useContext } from 'react'
 import styles from "../loginsignup/Signup.module.css"
+import { AuthContext } from "../../context/AuthContext";
+import {Link as RouterLink,useNavigate} from "react-router-dom"
+import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons';
+
 export default function Signup() {
+  const [showPassword, setShowPassword] = useState(false);
+  const [showcPassword, setShowcPassword] = useState(false);
+  const [strong,setStrong] = useState("")
+  const nameRef = useRef(null)
+const emailRef = useRef(null);
+const passRef = useRef(null);
+const cpassRef = useRef(null);
+const {Signup ,updateprofilename,emailverify} = useContext(AuthContext)
+const [iterror, setIterror] = useState("")
+  const navigate = useNavigate()
+
+
+const getformdata = async (event) => {
+  event.preventDefault();
+  if(passRef.current.value != cpassRef.current.value){
+    setIterror("password are not match");
+    return;
+  }
+
+  setIterror("")
+  let strength = check_strength(passRef.current.value)
+
+  if(strength){
+    try {
+      setIterror("")
+      await Signup(emailRef.current.value, passRef.current.value);
+      await updateprofilename(nameRef.current.value);
+      await emailverify()
+      navigate("/")
+    } catch (error) {
+      setIterror("Sorry there is some error")
+    }
+  }
+}
+
+function check_strength(password) {
+  var mediumRegex = new RegExp("^(?=.{8,})(((?=.*[A-Z])(?=.*[a-z]))|((?=.*[A-Z])(?=.*[0-9]))|((?=.*[a-z])(?=.*[0-9]))).*$", "g");
+ 
+ if (mediumRegex.test(password)) {
+      setStrong("")
+      return true;
+  } else {
+      setStrong("Password is weak")
+      return false;
+  }
+}
+
   return (
-    <div>
-        <div style={{ width:"100%" , height:"auto",backgroundColor:"#f9f9fa" }}  >
-        <form action="" >
+    <div >
+        <div style={{ width:"100%" , height:"auto",backgroundColor:"#f9f9fa",paddingBottom:"2rem" }}  >
+
+        <form action="" onSubmit={getformdata} >
         <div className={styles.main}>
+       
       <div >
         <h3 style={{marginTop:"2rem",marginLeft:"6rem"}} >
         Sign Up with Black pearl
@@ -31,20 +83,20 @@ export default function Signup() {
         <div style={{marginLeft:"-14rem"}}>
         Mobile Number
         </div>
-       <input style={{marginLeft:"0rem" , marginTop:"0.5rem" , width:"87%" , height:"2rem" , borderColor:"rgb(173, 169, 173)",borderRadius:"0.4rem",backgroundColor:"white",paddingLeft:"0.5rem",outline:"none",border:"1px solid rgb(222, 87, 229)"}} placeholder="Mobile Number" type="text" />
+       <input style={{marginLeft:"0rem" , marginTop:"0.5rem" , width:"87%" , height:"2rem" , borderColor:"rgb(173, 169, 173)",borderRadius:"0.4rem",backgroundColor:"white",paddingLeft:"0.5rem",outline:"none",border:"1px solid rgb(222, 87, 229)"}} placeholder="Mobile Number" type="number" />
       </div>
       <div style={{ marginTop:"1rem"}}  >
       <div style={{marginLeft:"-16rem"}}>
         Enter Email
         </div>
-       <input style={{marginLeft:"0rem" , marginTop:"0.5rem" , width:"87%" , height:"2rem" , borderColor:"rgb(173, 169, 173)",borderRadius:"0.4rem",backgroundColor:"white",paddingLeft:"0.5rem",outline:"none",border:"1px solid rgb(222, 87, 229)"}} placeholder="Enter Email" type="text" />
+       <input ref={emailRef} style={{marginLeft:"0rem" , marginTop:"0.5rem" , width:"87%" , height:"2rem" , borderColor:"rgb(173, 169, 173)",borderRadius:"0.4rem",backgroundColor:"white",paddingLeft:"0.5rem",outline:"none",border:"1px solid rgb(222, 87, 229)"}} placeholder="Enter Email" type="email" />
       </div>
       <div style={{display:"flex"}}>
         <div style={{ marginTop:"1rem"}} >
         <div style={{marginLeft:"-4.5rem"}}>
         First Name
         </div>
-       <input style={{marginLeft:"1rem" , marginTop:"0.5rem" , width:"85%" , height:"2rem" , borderColor:"rgb(173, 169, 173)",borderRadius:"0.4rem",backgroundColor:"white",paddingLeft:"0.5rem",outline:"none",border:"1px solid rgb(222, 87, 229)"}} placeholder="First Name"  type="text" /> 
+       <input ref={nameRef} style={{marginLeft:"1rem" , marginTop:"0.5rem" , width:"85%" , height:"2rem" , borderColor:"rgb(173, 169, 173)",borderRadius:"0.4rem",backgroundColor:"white",paddingLeft:"0.5rem",outline:"none",border:"1px solid rgb(222, 87, 229)"}} placeholder="First Name"  type="text" /> 
         </div>
         <div style={{ marginTop:"1rem"}} >
         <div style={{marginLeft:"-4.5rem"}}>
@@ -57,13 +109,27 @@ export default function Signup() {
         <div style={{marginLeft:"-16.5rem"}}>
         Password
         </div>
-       <input style={{marginLeft:"0rem" , marginTop:"0.5rem" , width:"87%" , height:"2rem" , borderColor:"rgb(173, 169, 173)",borderRadius:"0.4rem",backgroundColor:"white",paddingLeft:"0.5rem",outline:"none",border:"1px solid rgb(222, 87, 229)"}} placeholder="Password" type="text" />
+       <input ref={passRef} style={{marginLeft:"0rem" , marginTop:"0.5rem" , width:"87%" , height:"2rem" , borderColor:"rgb(173, 169, 173)",borderRadius:"0.4rem",backgroundColor:"white",paddingLeft:"0.5rem",outline:"none",border:"1px solid rgb(222, 87, 229)"}} placeholder="Password" type={showPassword ? 'text' : 'password'} />
+       <p
+                    style={{textAlign:"left",paddingLeft:"2rem"}}
+                    onClick={() =>
+                      setShowPassword(!showPassword)
+                    }>
+                    {showPassword ? <ViewIcon /> : <ViewOffIcon />}
+      </p>
       </div>
       <div style={{ marginTop:"1rem"}}>
         <div style={{marginLeft:"-12.7rem"}}>
        Confirm Password
         </div>
-       <input style={{marginLeft:"0rem" , marginTop:"0.5rem" , width:"87%" , height:"2rem" , borderColor:"rgb(173, 169, 173)",borderRadius:"0.4rem",backgroundColor:"white", paddingLeft:"0.5rem",outline:"none",border:"1px solid rgb(222, 87, 229)"}} placeholder="Confirm Password" type="text" />
+       <input ref={cpassRef} style={{marginLeft:"0rem" , marginTop:"0.5rem" , width:"87%" , height:"2rem" , borderColor:"rgb(173, 169, 173)",borderRadius:"0.4rem",backgroundColor:"white", paddingLeft:"0.5rem",outline:"none",border:"1px solid rgb(222, 87, 229)"}}  placeholder="Confirm Password" type={showcPassword ? 'text' : 'password'} />
+       <p
+                    style={{textAlign:"left",paddingLeft:"2rem"}}
+                    onClick={() =>
+                      setShowcPassword(!showcPassword)
+                    }>
+                    {showcPassword ? <ViewIcon /> : <ViewOffIcon />}
+      </p>
       </div>
       <div style={{margin:"auto", marginTop:"1rem", }}>
          <input type="radio" name='gender' />
@@ -73,6 +139,8 @@ export default function Signup() {
          <input type="radio"  name='gender'/>
           <label> I don't want to specify </label>
       </div>
+      <div style={strong ? {display:"block",height:"auto",backgroundColor:"rgb(224, 120, 120)" , borderRadius:"1rem" , width:"84.3%" , margin:"auto", marginTop:"1rem", padding:"0.5rem"} : {display:"none"} } >{strong}</div>
+      <div style={iterror ? {display:"block",height:"auto",backgroundColor:"rgb(224, 120, 120)" , borderRadius:"1rem" , width:"84.3%" , margin:"auto", marginTop:"1rem", padding:"0.5rem"} : {display:"none"} } >{iterror}</div>
       <div style={{height:"auto",backgroundColor:"#EFF5EC" , borderRadius:"1rem" , width:"84.3%" , margin:"auto", marginTop:"1rem", padding:"0.5rem"}}>
           <h3>
              Opt for Whatsapp Support</h3>
@@ -81,11 +149,13 @@ export default function Signup() {
              </p>
       </div>
        <div style={{height:"auto", width:"86%" , margin:"auto", marginTop:"1rem", padding:"0.5rem",marginBottom:"1rem"}} >
-       <button className={styles.registerbutton} >REGISTER TO CONTINUE</button>
+       
+       <input className={styles.registerbutton} type="submit" value={"REGISTER TO CONTINUE"} />
        
        </div>
        <div>
-       Already have an account? <span style={{color:"rgb(222, 87, 229)" , cursor: "pointer" }}>LOG IN </span>
+       
+       Already have an account? <RouterLink style={{textDecoration:"none"}} to={"/login"}><span style={{color:"rgb(222, 87, 229)" , cursor: "pointer"}} >Login</span></RouterLink>
         
        </div>
         </div>

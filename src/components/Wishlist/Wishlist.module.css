@@ -1,0 +1,174 @@
+.emptyWishlistMain {
+  margin-top: 9rem;
+  padding-bottom: 10rem;
+}
+
+.wishListDetails img {
+  width: 60%;
+}
+
+.emptyYourWishlist > h2 {
+  color: #231535;
+  font-family: "BegumRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2.4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.emptyYourWishlist > p {
+  font-size: 2.4rem;
+  color: #231535;
+  font-family: "BegumMedium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.wishlistMain {
+  margin-top: 9rem;
+  margin-bottom: 2rem;
+}
+
+.wishlistMain > h2 {
+  color: #231535;
+  font-family: MuliBold, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2.4rem;
+  display: flex;
+  justify-content: center;
+}
+/*
+
+.wishListDetails {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.wishListDetails p {
+  font-size: 1.9rem;
+  font-family: MuliBold, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: inherit;
+  color: rgb(79, 50, 103);
+}
+.wishlistButtons {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 1rem;
+}
+
+.wishlistButtons > button {
+  background: linear-gradient(
+      to right,
+      rgb(222, 87, 229) 0%,
+      rgb(136, 99, 251) 100%
+    )
+    0px 0px / auto;
+  width: 25%;
+  height: 2rem;
+  border-radius: 1rem;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 5rem;
+}
+
+.wishlistName > p {
+  font-family: MuliRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.4rem;
+  margin: auto;
+  line-height: inherit;
+  max-width: calc(100% - 100px);
+  color: rgb(157, 159, 164);
+}
+
+@media screen and (max-width: 990px) {
+  .wishlistMain > h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  .wishListDetails p {
+    font-size: 1.2rem;
+  }
+
+  .wishlistName > p {
+    font-size: 1rem;
+  }
+  .wishlistButtons {
+    flex-direction: column;
+    padding-top: 0rem;
+    margin: auto;
+  }
+  .wishlistButtons > button {
+    width: 50%;
+    height: 2rem;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (max-width: 560px) {
+  .wishListDetails {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .wishListDetails p {
+    font-size: 1rem;
+  }
+  .wishlistName > p {
+    font-size: 0.8rem;
+  }
+  .wishlistButtons > button {
+    font-size: 0.8rem;
+  }
+} */
+.single__maindiv {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.single__image {
+  width: 100%;
+}
+
+.wishListDetails {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.single__buttondiv {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.single__buttondiv button {
+  background: linear-gradient(to right, #fff6c8 0%, #ffd7f5 48%);
+  padding: 0.3rem 1rem;
+  margin: 0.4rem auto;
+  border-radius: 0.4rem;
+}
+
+.single__buttondiv button:hover {
+  background: linear-gradient(
+      to right,
+      rgb(222, 87, 229) 0%,
+      rgb(136, 99, 251) 100%
+    )
+    0px 0px / auto;
+}
+
+.single__pricetag {
+  font-size: 1.4rem;
+}
+
+.single__anchor {
+  border: 1px solid black;
+  text-decoration: none;
+  color: black;
+}
+
+.single__name_heart {
+  display: flex;
+  width: 60%;
+  margin-left: 0.2rem;
+  flex-flow: row-reverse;
+  justify-content: space-between;
+}
+
+.single__wishlist {
+  color: red;
+}
