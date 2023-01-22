@@ -2,6 +2,8 @@ import React from "react";
 import styles from "./Cart.module.css";
 import wishlist from "../../assets/wishlist.png";
 import { useEffect, useState } from "react";
+import {Link as RouterLink} from "react-router-dom"
+
 
 const Cart = () => {
   const [status, setStatus] = useState(false);
@@ -70,7 +72,7 @@ const Cart = () => {
         ))}
       </div>
       <div className={styles.single__buttondiv}>
-        <button>Proced to Checkout</button>
+        <RouterLink to={"/address"}> <button>Proced to Checkout</button></RouterLink>
       </div>
     </div>
   );

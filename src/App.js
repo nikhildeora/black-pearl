@@ -26,7 +26,7 @@ function App() {
 
       <Navbar />
       {/* <AdminAuth /> */}
-      <Payment />
+      {/* <Payment /> */}
       {/* <Address /> */}
       {/* <Detail /> */}
 

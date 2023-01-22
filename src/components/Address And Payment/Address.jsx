@@ -1,11 +1,14 @@
 import React, { useRef, useState } from "react";
 import styles from "./Address.module.css";
+import { useNavigate } from "react-router-dom";
+
 const Address = () => {
   const nameRef = useRef(null);
   const emailRef = useRef(null);
   const addreddRef = useRef(null);
   const cityRef = useRef(null);
   const statelRef = useRef(null);
+  const navigate = useNavigate();
 
   const getFormData = () => {
     if (
@@ -17,6 +20,7 @@ const Address = () => {
     ) {
       // console.log(addressObj);
       alert("Please fill Complete Address");
+      return;
     }
 
     let addressObj = {
@@ -27,9 +31,10 @@ const Address = () => {
       state: statelRef.current.value,
     };
 
-    console.log(addressObj);
+    // console.log(addressObj);
     localStorage.setItem("addreddObj", JSON.stringify(addressObj));
 
+    navigate("/payment")
     // console.log();
   };
 
