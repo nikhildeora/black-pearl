@@ -88,7 +88,7 @@
 
 .navbar__searchicon{
     border: 1px solid rgb(222, 87, 229);
-    padding: 0rem 0.3rem 0.3rem 0.3rem;
+    padding: 0.3rem 0.3rem 0.3rem 0.3rem;
    background: linear-gradient(to right, rgb(222, 87, 229) 0%, rgb(136, 99, 251) 100%) 0px 0px / auto;
    color: white;
    width: 4.2rem;
@@ -139,9 +139,11 @@
 
 .navbar__secondmenu>li p{
     margin: 0px;
+    
 }
 
-.navbar__secondmenu>li p:hover{
+
+.navbar__secondmenu>li p>a:hover{
     color: rgb(222, 87, 229);
     text-decoration: underline;
     transition-duration: 0.3s;
@@ -272,7 +274,7 @@
     }
     .navbar__mainthirdpart{
         position: fixed;
-        top: 4rem;
+        top: 6rem;
         left: -100%;
         font-size: 2rem;
         width: 100%;
@@ -290,6 +292,6 @@
         top: 12rem;
     }
     .navbar__secondcontainer{
-        top: 30.9rem;
+        top: 28.9rem;
     }
 }
