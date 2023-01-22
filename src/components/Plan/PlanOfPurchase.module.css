@@ -8,18 +8,19 @@
     width: 100%;
     
 }
-
-.desktopBanner1{
+.banner__container{
     position: relative;
-    display: block;
+}
+.desktopBanner1{
+  
     width: 100%;
 }
 .mobileBanner1{
   display: none;
 }
 .text_container{
-   position: absolute;
-    top: 50%;
+    position: absolute;
+    top: 10%;
     left: 0;
     right: 0;
     width: 100%;
@@ -28,7 +29,7 @@
     /* z-index: 1; */
    /* -webkit-transform: translateY(-50%); 
       -ms-transform: translateY(-50%);   */
-    transform: translateY(-50%);
+    /* transform: translateY(-50%); */
 }
 .text_container > div{
     padding: 4rem;
@@ -261,9 +262,11 @@ hr{
     font-weight: 400;
 }
 .banner__container2{
+    position: relative;
     width: 100%;
 }
 .banner2__desk{
+    
     width: 100%;
 }
 .banner2__mob{
@@ -271,14 +274,14 @@ hr{
 }
 .text_container2{
     position: absolute;
-    top: 390%;
-    left: 45%;
+    top:10%;
+    left: 5%;
     width: 80%;
     text-align: center;
     color: black;
     /* -webkit-transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%); */
-    transform: translate(-50%,-50%);
+    /* transform: translate(-50%,-50%); */
 }
 .text_container2 > div{
     /* padding: 4rem; */
@@ -382,6 +385,7 @@ hr{
     font-size: 1.2rem;
 }
 @media screen and (max-width:990px) {
+
   .text_container > div{
     width: 70%;
   }
@@ -441,8 +445,8 @@ hr{
 }
 .text_container2{
  
-  top: 290%;
-  left: 45%;
+  top: 10%;
+  left: 7%;
   width: 80%;
   text-align: center;
   
@@ -468,7 +472,7 @@ hr{
     width: 100%;
   }
   .text_container{
-    top: 65%;
+    top: 15%;
     display: flex;
     flex-direction: column;
     /* top: 40%; */
@@ -557,18 +561,23 @@ display: none;
 }
 .text_container2{
  
-  top: 590%;
-  left: 55%;
+  top: 10%;
+  left: 5%;
   width: 80%;
   display: flex;
-  flex-direction: column;
-  /* top: 40%; */
+  flex-direction: column; 
+ 
   justify-content: center;
   text-align: center;
   align-items: center;
   
 }
+.text_container2 >div >p{
+  text-align: center;
+
+}
 .text_container2 >div >h1{
+  text-align: center;
   font-size: 1.6rem;
   font-weight: 200;
 }
