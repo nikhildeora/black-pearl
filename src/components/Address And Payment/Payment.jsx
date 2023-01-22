@@ -11,7 +11,7 @@ const Payment = () => {
   const navigate = useNavigate();
 
   const addressObj = JSON.parse(localStorage.getItem("addreddObj"));
-  // const totalAmount = localStorage.getItem("totalAmount");
+  const totalAmount = localStorage.getItem("totalAmount");
   //   console.log(addressObj.fullName);
 
   const emptycart = (buttype) => {
@@ -35,12 +35,14 @@ const Payment = () => {
       }
     }
 
-    fetch(`http://localhost:8080/cart`)
+    // fetch(`http://localhost:8080/cart`)
+    fetch(`https://blackpearl.onrender.com/cart`)
       .then((res) => res.json())
       .then((res) => {
         for (let i = 0; i < res.length; i++) {
           let id = res[i].id;
-          fetch(`http://localhost:8080/cart/${id}`, {
+          // fetch(`http://localhost:8080/cart/${id}`, {
+          fetch(`https://blackpearl.onrender.com/cart/${id}`, {
             method: "DELETE",
           });
         }
@@ -65,8 +67,8 @@ const Payment = () => {
       </div>
 
       <div className={styles.cardaPymentNew}>
-        {/* <h2>{totalAmount}</h2> */}
-        <button onClick={() => emptycart("cod")}>Cash On Delivery?</button>
+        <h2>Total Amount : &#8377; {totalAmount}</h2>
+        <button style={{marginBottom:"50px"}} onClick={() => emptycart("cod")}>Cash On Delivery?</button>
         <h2>Online Payment</h2>
         <div className={styles.cardPaymentInputs}>
           <p>Name on the card</p>

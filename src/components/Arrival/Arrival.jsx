@@ -60,9 +60,11 @@ const [sortToggle , setSortToggle] = useState(false)
     const getData = async () => {
       let resp;
       if (category === "all" || category === "ready" || category === "gifts" || category === "findstore") {
-        resp = await fetch(`http://localhost:8080/jewellery`);
+        // resp = await fetch(`http://localhost:8080/jewellery`);
+        resp = await fetch(`https://blackpearl.onrender.com/jewellery`);
       } else {
-        resp = await fetch(`http://localhost:8080/jewellery?category=${category}`);
+        // resp = await fetch(`http://localhost:8080/jewellery?category=${category}`);
+        resp = await fetch(`https://blackpearl.onrender.com/jewellery?category=${category}`);
       }
       let apiData = await resp.json();
       setData(apiData)
@@ -89,10 +91,12 @@ async function sorrtbygte(gte,lte){
 
   let resp;
   if (category === "all" || category === "ready" || category === "gifts" || category === "findstore") {
-    resp = await fetch(`http://localhost:8080/jewellery?price_gte=${gte}&price_lte=${lte}`);
+    // resp = await fetch(`http://localhost:8080/jewellery?price_gte=${gte}&price_lte=${lte}`);
+    resp = await fetch(`https://blackpearl.onrender.com/jewellery?price_gte=${gte}&price_lte=${lte}`);
     setCateg("all")
   } else {
-    resp = await fetch(`http://localhost:8080/jewellery?category=${category}&price_gte=${gte}&price_lte=${lte}`);
+    // resp = await fetch(`http://localhost:8080/jewellery?category=${category}&price_gte=${gte}&price_lte=${lte}`);
+    resp = await fetch(`https://blackpearl.onrender.com/jewellery?category=${category}&price_gte=${gte}&price_lte=${lte}`);
   }
   let apiData = await resp.json();
   setData(apiData)
@@ -102,7 +106,8 @@ async function sorrtbygte(gte,lte){
 async function changeCateg(switchcateg){
   
   if (category === "all" || category === "ready" || category === "gifts" || category === "findstore") {
-    let res = await fetch(`http://localhost:8080/jewellery?category=${switchcateg}`);
+    // let res = await fetch(`http://localhost:8080/jewellery?category=${switchcateg}`);
+    let res = await fetch(`https://blackpearl.onrender.com/jewellery?category=${switchcateg}`);
     let apiData = await res.json();
     setData(apiData)
     setCateg(switchcateg)

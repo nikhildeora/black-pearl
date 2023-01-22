@@ -10,7 +10,8 @@ const Cart = () => {
   const [total, setTotal] = useState(0);
 
   const deleteWishlist = async (id) => {
-    let res = await fetch(`http://localhost:8080/cart/${id}`, {
+    // let res = await fetch(`http://localhost:8080/cart/${id}`, {
+    let res = await fetch(`https://blackpearl.onrender.com/cart/${id}`, {
       method: "Delete",
     });
     setStatus(!status);
@@ -27,7 +28,8 @@ const Cart = () => {
 
   useEffect(() => {
     async function getWishList() {
-      let res = await fetch("http://localhost:8080/cart");
+      // let res = await fetch("http://localhost:8080/cart");
+      let res = await fetch("https://blackpearl.onrender.com/cart");
       let data1 = await res.json();
       setDatas(data1);
       await getTotal(data1);

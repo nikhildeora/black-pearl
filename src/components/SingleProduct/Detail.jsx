@@ -21,7 +21,8 @@ export default function Detail() {
 
   useEffect(() => {
     async function getData() {
-      let res = await fetch(`http://localhost:8080/jewellery/${id}`);
+      // let res = await fetch(`http://localhost:8080/jewellery/${id}`);
+      let res = await fetch(`https://blackpearl.onrender.com/jewellery/${id}`);
       let data = await res.json();
       setData(data);
     }
@@ -29,7 +30,8 @@ export default function Detail() {
   }, []);
 
   const addtocart = async () => {
-    let res = await fetch(`http://localhost:8080/cart`, {
+    // let res = await fetch(`http://localhost:8080/cart`, {
+    let res = await fetch(`https://blackpearl.onrender.com/cart`, {
       method: "POST",
       body: JSON.stringify({ ...data }),
       headers: {
@@ -39,7 +41,8 @@ export default function Detail() {
   }
 
   const addtowishlist = async () => {
-    let res = await fetch(`http://localhost:8080/wishlist`, {
+    // let res = await fetch(`http://localhost:8080/wishlist`, {
+    let res = await fetch(`https://blackpearl.onrender.com/wishlist`, {
       method: "POST",
       body: JSON.stringify({ ...data }),
       headers: {
