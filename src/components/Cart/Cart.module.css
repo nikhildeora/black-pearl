@@ -50,7 +50,7 @@
 .single__buttondiv {
   display: flex;
   width: 80%;
-  justify-content: space-between;
+  justify-content: center;
   margin: auto;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -97,6 +97,10 @@
 .cart__totaltext{
   text-align: center;
   margin-bottom: 1rem;
+}
+
+.cart__proceedButton{
+  color: black;
 }
 
 @media screen and (max-width: 990px) {

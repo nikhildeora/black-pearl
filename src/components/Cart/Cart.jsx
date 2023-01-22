@@ -22,6 +22,7 @@ const Cart = () => {
       totalam += data[i].price;
     }
     setTotal(totalam);
+    localStorage.setItem("totalAmount",totalam)
   }
 
   useEffect(() => {
@@ -70,10 +71,8 @@ const Cart = () => {
         ))}
       </div>
       <div className={styles.single__buttondiv}>
-        <RouterLink to={"/address"}>
-          {" "}
-          <button>Proced to Checkout</button>
-        </RouterLink>
+
+        <RouterLink to={"/address"}> <button className={styles.cart__proceedButton} >Proced to Checkout</button></RouterLink>
       </div>
     </div>
   );

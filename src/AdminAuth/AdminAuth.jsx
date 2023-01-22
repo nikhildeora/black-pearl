@@ -44,6 +44,7 @@ const AdminAuth = () => {
     categoryRef.current.value = null;
     shippingRef.current.value = null;
   };
+
   return (
     <div>
       <div className={styles.mainContainer}>

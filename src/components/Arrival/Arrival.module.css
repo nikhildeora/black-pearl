@@ -14,6 +14,7 @@
     padding-bottom: 1.6rem;
     height: fit-content;
     border-radius: 1.4rem;
+    display: block;
 }
 
 .arrival__sortdiv button{
@@ -44,15 +45,44 @@
     border-top-left-radius: 1.4rem;
 }
 
+.arrival__filteroption{
+    display: none;
+}
+
 @media screen and (max-width:990px) {
     .arrival__datadiv{
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(3,1fr);
       
+    }
+    .arrival__maindiv{
+        flex-direction: column;
+    }
+    .arrival__filteroption{
+        display: block;
+        width: 40%;
+        font-size: 24px;
+        margin: auto;
+        padding: 0.7rem 2rem;
+        border: 1px solid rgb(222, 87, 229);
+        border-radius: 1.2rem;
+    }
+    .arrival__filteroption:hover{
+        background: linear-gradient(to right, rgb(222, 87, 229) 0%, rgb(136, 99, 251) 100%) 0px 0px / auto;
+    }
+    
+    .arrival__sortdiv{
+       display: none;
+    }
+    .showarrival_sort{
+        display: block;
     }
 }
 
 @media screen and (max-width:560px) {
     .arrival__datadiv{
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(2,1fr);
+    }
+    .arrival__filteroption{
+        width: 60%;
     }
 }

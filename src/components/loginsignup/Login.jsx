@@ -21,7 +21,11 @@ export default function Login() {
     try {
       setIterror("");
       await Login(emailRef.current.value, passRef.current.value);
-      navigate("/")
+      if(emailRef.current.value==="blackpearl@gmail.com"){
+        navigate("/admin")
+      }else{
+        navigate("/")
+      }
     } catch (error) {
       setIterror("invalid username or password")
     }
