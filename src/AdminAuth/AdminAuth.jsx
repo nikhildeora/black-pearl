@@ -29,7 +29,8 @@ const AdminAuth = () => {
       shipping: shippingRef.current.value,
     };
 
-    let res = await fetch("http://localhost:8080/jewellery", {
+    // let res = await fetch("http://localhost:8080/jewellery", {
+    let res = await fetch("https://blackpearl.onrender.com/jewellery", {
       method: "POST",
       body: JSON.stringify(newData),
       headers: {
@@ -37,12 +38,13 @@ const AdminAuth = () => {
       },
     });
     let data1 = await res.json();
-    console.log("data", data1);
+    
     nameRef.current.value = null;
     priceRef.current.value = null;
     imageRef.current.value = null;
     categoryRef.current.value = null;
     shippingRef.current.value = null;
+    alert("Product added successfully")
   };
 
   return (

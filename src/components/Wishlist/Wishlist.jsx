@@ -9,7 +9,8 @@ const Wishlist = () => {
   console.log(datas);
 
   const addtocart = async (data) => {
-    let res = await fetch(`http://localhost:8080/cart`, {
+    // let res = await fetch(`http://localhost:8080/cart`, {
+    let res = await fetch(`https://blackpearl.onrender.com/cart`, {
       method: "POST",
       body: JSON.stringify({ ...data }),
       headers: {
@@ -19,7 +20,8 @@ const Wishlist = () => {
   };
 
   const deleteWishlist = async (id) => {
-    let res = await fetch(`http://localhost:8080/wishlist/${id}`, {
+    // let res = await fetch(`http://localhost:8080/wishlist/${id}`, {
+    let res = await fetch(`https://blackpearl.onrender.com/wishlist/${id}`, {
       method: "Delete",
     });
     setStatus(!status);
@@ -27,7 +29,8 @@ const Wishlist = () => {
 
   useEffect(() => {
     async function getWishList() {
-      let res = await fetch("http://localhost:8080/wishlist");
+      // let res = await fetch("http://localhost:8080/wishlist");
+      let res = await fetch("https://blackpearl.onrender.com/wishlist");
       let data1 = await res.json();
       setDatas(data1);
     }
