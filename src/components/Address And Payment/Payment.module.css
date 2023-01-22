@@ -1,17 +1,22 @@
-.addressMain {
-  margin: 8rem 0;
+.mainPayment {
+  margin: 9rem 0;
+}
+
+.cardaPymentNew {
+  margin-top: 5rem;
   display: flex;
   flex-direction: column;
 }
 
-.addressInput {
+.cardPaymentInputs {
   margin: auto;
   margin-top: 2rem;
   width: 30%;
   text-align: left;
   /* border: 1px solid red; */
 }
-.addressInput input {
+
+.cardPaymentInputs input {
   margin: 1rem 0;
   border-color: rgb(173, 169, 173);
   width: 100%;
@@ -23,7 +28,8 @@
   outline: none;
   border: 1px solid rgb(222, 87, 229);
 }
-.addressInput select {
+
+.cardPaymentInputs select {
   border: 1px solid rgb(222, 87, 229);
   outline: none;
   border-radius: 0.4rem;
@@ -32,21 +38,21 @@
   height: 2rem;
 }
 
-.addressInput p {
+.cardPaymentInputs p {
   color: rgb(79, 50, 103);
   font-family: InterSemiBold, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.3rem;
   line-height: 14px;
 }
 
-.addressMain button {
+.cardaPymentNew button {
   background: linear-gradient(to right, #fff6c8 0%, #ffd7f5 48%);
   padding: 0.3rem 1rem;
   margin: 0.4rem auto;
   border-radius: 0.4rem;
 }
 
-.addressMain button:hover {
+.cardaPymentNew button:hover {
   background: linear-gradient(
       to right,
       rgb(222, 87, 229) 0%,
@@ -55,14 +61,23 @@
     0px 0px / auto;
 }
 
+.mainPayment p {
+  color: rgb(79, 50, 103);
+  font-family: InterSemiBold, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.7rem;
+}
 @media screen and (max-width: 990px) {
-  .addressInput {
+  .cardPaymentInputs {
     width: 50%;
+  }
+  .mainPayment p {
+    font-size: 1rem;
   }
 }
 
 @media screen and (max-width: 560) {
-  .addressInput {
+  .cardPaymentInputs {
     width: 70%;
   }
 }
