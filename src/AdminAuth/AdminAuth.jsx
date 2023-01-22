@@ -10,7 +10,7 @@ import styles from './AdminAuth.module.css'
                 </div>
                  
                  <div className={styles.formContainer}>
-                 <form action="">
+                 <form className={styles.adminForm} action="">
                     <div className={styles.input_div}>
                     <p>Name</p>
                     <input type="text" placeholder='Name'/>
