@@ -7,7 +7,9 @@ import "./App.css";
 
 
 import AllRoutes from "./components/AllRoutes";
-// import Cart from "./components/Cart/Cart.jsx";
+
+
+import Cart from "./components/Cart/Cart.jsx";
 
 
 import Footer from "./components/Footer/Footer";
@@ -27,12 +29,16 @@ import PlanOfPurchase from "./components/Plan/PlanOfPurchase";
 function App() {
   return (
     <div className="App">
+
       <Navbar />
-{/* <PlanOfPurchase/> */}
+
       {/* <Detail /> */}
+
        <AllRoutes />
+
       {/* <Homepage /> */}
       {/* <FreeTryAtHome /> */}
+     
 
       <Footer />
     </div>
