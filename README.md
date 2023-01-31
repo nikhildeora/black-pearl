@@ -8,8 +8,7 @@ Black Pearl is an Ecommerce Website where you can find a variety of jewelleries 
 # Highlights
 
 
-Group Project.\
-My role is to lead the Team and create Navbar, Footer and Product Pages.
+Group Project.
 
 
 
