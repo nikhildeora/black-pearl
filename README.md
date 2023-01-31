@@ -1,21 +1,48 @@
-# Rct 201 project Readme
+# Black Pearl (Inspired by caratlane.com)
+Black Pearl is an Ecommerce Website where you can find a variety of jewelleries of Gold, Platinum, Solitiare, Diamond, Silver, etc and more
 
-project unique name :  common-tank-1254
 
-Project website : https://www.caratlane.com/
+![blackpearl](https://user-images.githubusercontent.com/112634386/215759930-a56f6d1e-686e-46a5-9d6e-8d25e0bf5fb9.png)
 
-Team members
 
-fw21_1068-Nikhil Deora
+# Highlights
 
-fp05_143-Abhay Kant Tiwari
 
-fw20_1176-Ayush Singh
+Group Project.\
+My role is to lead the Team and create Navbar, Footer and Product Pages.
 
-fw19_0428-Varun Jatav
 
-fw20_0713-Karnsing Rajput
 
-IA manager :  om.prakash@masaischool.com
+# To Run Locally
+## Clone the project
+```bash
+  git clone https://github.com/nikhildeora/black-pearl.git
+```
 
-github id : omthakur1224
+Go to the project directory
+
+```bash
+  cd black-pearl
+
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+
+```bash
+  npm run start
+```
+
+# Tech Stack
+
+HTML.\
+CSS.\
+JavaScript.\
+Firebase-auth.\
+React.
